@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization DragonHack</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body {
+      background: linear-gradient(0deg, #0b0d16, #0b0d16);
+    }
+  </style>
+  <body>
+    <div class="auth-wrapper">
+      <header style="background: #171924"><p>Временая Шапка</p></header>
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-body">
+            <div class="auth-tolls-wrapper">
+              <div data-id="authorization" class="auth-tolls b-auth-tolls">
+                <div class="auth-tabs">
+                  <button class="active" data-id="authorization">
+                    Авторизация
+                  </button>
+                  <button data-id="registration">Регистрация</button>
+                </div>
+
+                <form class="auth-form">
+                  <div class="auth-form-input b-auth-form-input">
+                    <span>Электронная почта</span>
+                    <label>
+                      <i class="icon icon-Email"></i>
+                      <input
+                        type="text"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Введите e-mail"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="auth-form-input b-auth-form-input">
+                    <span> Пароль</span>
+                    <label>
+                      <i class="icon icon-access"></i>
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="password"
+                        placeholder="Введите пароль"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="conduct-block">
+                    <div class="conduct-round-box b-conduct-round-box">
+                      <div class="conduct-round b-conduct-round">
+                        <i class="icon icon-Alines"></i>
+                      </div>
+                      <span>Проведите </span>
+                    </div>
+                    <a class="conduct-logo" href="#">
+                      <img
+                        width="42"
+                        height="49"
+                        loading="eager"
+                        src="assets/images/DragonHackLogo.svg"
+                        alt="photo"
+                      />
+                    </a>
+                  </div>
+
+                  <button class="auth-btn b-auth-btn">Авторизоваться</button>
+                </form>
+
+                <div class="auth-tools">
+                  <div class="auth-remember-block">
+                    <div class="remember-block active">
+                      <div class="remember-icon b-remember-icon">
+                        <i class="icon icon-check"></i>
+                      </div>
+                      <p>Запомнить меня</p>
+                    </div>
+                    <a class="forgot-link b-forgot-link" href="">
+                      Забыли пароль?
+                    </a>
+                  </div>
+
+                  <div class="auth-or-box">
+                    <span></span>
+                    <p>или</p>
+                    <span></span>
+                  </div>
+
+                  <div class="auth-options-items">
+                    <a class="auth-option-item b-auth-option-item" href="#">
+                      <i class="icon icon-discord"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item" href="#">
+                      <i class="icon icon-vk"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item" href="#">
+                      <i class="icon icon-steam"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item" href="#">
+                      <i class="icon icon-google"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div data-id="registration" class="auth-tolls b-auth-tolls">
+                <div class="auth-tabs">
+                  <button class="active" data-id="authorization">
+                    Авторизация
+                  </button>
+                  <button data-id="registration">Регистрация</button>
+                </div>
+
+                <form class="auth-form">
+                  <div class="auth-form-input b-auth-form-input">
+                    <span>Электронная почта</span>
+                    <label>
+                      <i class="icon icon-Email"></i>
+                      <input
+                        type="text"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Введите e-mail"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="auth-form-input b-auth-form-input">
+                    <span> Пароль</span>
+                    <label>
+                      <i class="icon icon-access"></i>
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="password"
+                        placeholder="Введите пароль"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="conduct-block">
+                    <div class="conduct-round-box b-conduct-round-box">
+                      <div class="conduct-round b-conduct-round">
+                        <i class="icon icon-Alines"></i>
+                      </div>
+                      <span>Проведите </span>
+                    </div>
+                    <a class="conduct-logo" href="#">
+                      <img
+                        width="42"
+                        height="49"
+                        loading="eager"
+                        src="assets/images/DragonHackLogo.svg"
+                        alt="photo"
+                      />
+                    </a>
+                  </div>
+
+                     <div class="auth-form-input b-auth-form-input b-referral-input">
+                    <label>
+                      <i class="icon icon-guest"></i>
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="password"
+                        placeholder="Введите реферальный код "
+                      />
+                    </label>
+                  </div>
+
+
+
+                  <button class="auth-btn b-auth-btn">
+                    Зарегистрироваться
+                  </button>
+                </form>
+
+                <div class="auth-tools">
+                  <div class="auth-options-items b-auth-options-items">
+                    <a class="auth-option-item b-auth-option-item b-option-item-small" href="#">
+                      <i class="icon icon-discord"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item b-option-item-small" href="#">
+                      <i class="icon icon-vk"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item b-option-item-small" href="#">
+                      <i class="icon icon-steam"></i>
+                    </a>
+
+                    <a class="auth-option-item b-auth-option-item b-option-item-small" href="#">
+                      <i class="icon icon-google"></i>
+                    </a>
+                  </div>
+
+                  <p class="auth-policy b-auth-policy">
+                    Ваши личные данные будут использоваться для упрощения вашего
+                    дальнейшего взаимодействия с сайтом, управления доступом к
+                    вашему аккаунту и других целей, описанных в <a href="#"
+                      >политике конфиденциальности.</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="auth-media-wrapper">
+              <div class="auth-media">
+                <img
+                  width="1061"
+                  height="670"
+                  loading="eager"
+                  src="assets/images/bAuthMedia.webp"
+                  alt="photo"
+                />
+              </div>
+
+              <div class="b-media-img--one">
+                <img
+                  width="605"
+                  height="618"
+                  loading="eager"
+                  src="assets/images/bAuthMediaImg1.webp"
+                  alt="photo"
+                />
+              </div>
+
+              <div class="b-media-img--two">
+                <img
+                  width="579"
+                  height="678"
+                  loading="eager"
+                  src="assets/images/bAuthMediaImg2.webp"
+                  alt="photo"
+                />
+              </div>
+
+              <div class="auth-media-description">
+                <p class="auth-media-clue b-auth-media-clue">
+                  <a href="#">DragonHack</a> это
+                </p>
+
+                <div class="auth-media-items">
+                  <div class="auth-media-item b-auth-media-item">
+                    <span>350+</span> продуктов
+                  </div>
+                  <div class="auth-media-item b-auth-media-item">
+                    <span>100+</span> товаров
+                  </div>
+                  <div class="auth-media-item b-auth-media-item">
+                    <span>20.000+</span> клиентов
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

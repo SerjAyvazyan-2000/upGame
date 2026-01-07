@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+
+
+.icon-Email{
+  mask-image: url(Email.svg);
+  -webkit-mask-image: url(Email.svg);
+}
+
+.icon-access{
+    mask-image: url(access.svg);
+  -webkit-mask-image: url(access.svg);
+}
+.icon-Alines{
+    mask-image: url(Alines.svg);
+  -webkit-mask-image: url(Alines.svg);
+}
+.icon-check{
+    mask-image: url(check.svg);
+  -webkit-mask-image: url(check.svg);
+}
+.icon-discord{
+    mask-image: url(discord.svg);
+  -webkit-mask-image: url(discord.svg);
+}
+.icon-vk{
+    mask-image: url(vk.svg);
+  -webkit-mask-image: url(vk.svg);
+}
+.icon-steam{
+      mask-image: url(steam.svg);
+  -webkit-mask-image: url(steam.svg);
+}
+.icon-google{
+        mask-image: url(google.svg);
+  -webkit-mask-image: url(google.svg);
+}
+.icon-guest{
+        mask-image: url(Guest.svg);
+  -webkit-mask-image: url(Guest.svg);
+}

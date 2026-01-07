@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authorization UP GAME</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body{
+      background: #0D0D0D;
+    }
+  </style>
+  <body>
+    <div class="auth-wrapper">
+      <header><p>Временая Шапка</p> </header>
+      <section class="auth-section">
+        <div class="auth-container">
+          <div class="auth-body">
+            <div class="auth-tolls-wrapper">
+              <div data-id="authorization" class="auth-tolls a-auth-tolls">
+                <div class="auth-tabs">
+                  <button class="active" data-id="authorization">
+                    Авторизация
+                  </button>
+                  <button data-id="registration">Регистрация</button>
+                </div>
+
+                <form class="auth-form">
+                  <div class="auth-form-input a-auth-form-input">
+                    <span>Электронная почта</span>
+                    <label>
+                      <i class="icon icon-Email"></i>
+                      <input
+                        type="text"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Введите e-mail"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="auth-form-input a-auth-form-input">
+                    <span> Пароль</span>
+                    <label>
+                      <i class="icon icon-access"></i>
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="password"
+                        placeholder="Введите пароль"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="conduct-block">
+                    <div class="conduct-round-box a-conduct-round-box">
+                      <div class="conduct-round a-conduct-round">
+                        <i class="icon icon-Alines"></i>
+                      </div>
+                      <span>Проведите </span>
+                    </div>
+                    <a class="conduct-logo" href="#">
+                      <img
+                        width="41"
+                        height="50"
+                        loading="eager"
+                        src="assets/images/upGameLogo.svg"
+                        alt="photo"
+                      />
+                    </a>
+                  </div>
+
+                  <button class="auth-btn a-auth-btn">Авторизоваться</button>
+                </form>
+
+                <div class="auth-tools">
+                  <div class="auth-remember-block">
+                    <div class="remember-block active">
+                      <div class="remember-icon a-remember-icon">
+                        <i class="icon icon-check"></i>
+                      </div>
+                      <p>Запомнить меня</p>
+                    </div>
+                    <a class="forgot-link a-forgot-link" href="">
+                      Забыли пароль?
+                    </a>
+                  </div>
+
+                  <div class="auth-or-box">
+                    <span></span>
+                    <p>или</p>
+                    <span></span>
+                  </div>
+
+                  <div class="auth-options-items">
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-discord"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-vk"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-steam"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-google"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div data-id="registration" class="auth-tolls a-auth-tolls">
+                <div class="auth-tabs">
+                  <button class="active" data-id="authorization">
+                    Авторизация
+                  </button>
+                  <button data-id="registration">Регистрация</button>
+                </div>
+
+                <form class="auth-form">
+                  <div class="auth-form-input a-auth-form-input">
+                    <span>Электронная почта</span>
+                    <label>
+                      <i class="icon icon-Email"></i>
+                      <input
+                        type="text"
+                        name="email"
+                        autocomplete="off"
+                        placeholder="Введите e-mail"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="auth-form-input a-auth-form-input">
+                    <span> Пароль</span>
+                    <label>
+                      <i class="icon icon-access"></i>
+                      <input
+                        autocomplete="off"
+                        type="text"
+                        name="password"
+                        placeholder="Введите пароль"
+                      />
+                    </label>
+                  </div>
+
+                  <div class="conduct-block">
+                    <div class="conduct-round-box a-conduct-round-box">
+                      <div class="conduct-round a-conduct-round">
+                        <i class="icon icon-Alines"></i>
+                      </div>
+                      <span>Проведите </span>
+                    </div>
+                    <a class="conduct-logo" href="#">
+                      <img
+                        width="41"
+                        height="50"
+                        loading="eager"
+                        src="assets/images/upGameLogo.svg"
+                        alt="photo"
+                      />
+                    </a>
+                  </div>
+
+                  <button class="auth-btn a-auth-btn">
+                    Зарегистрироваться
+                  </button>
+                </form>
+
+                <div class="auth-tools">
+                  <div class="auth-options-items">
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-discord"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-vk"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-steam"></i>
+                    </a>
+
+                    <a class="auth-option-item a-auth-option-item" href="#">
+                      <i class="icon icon-google"></i>
+                    </a>
+                  </div>
+
+                  <p class="auth-policy">
+                    Ваши личные данные будут использоваться для упрощения вашего
+                    дальнейшего взаимодействия с сайтом, управления доступом к
+                    вашему аккаунту и других целей, описанных в
+                    документе <a href="#">политика конфиденциальности.</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="auth-media-wrapper">
+              <div class="auth-media">
+                <img
+                  width="1061"
+                  height="670"
+                  loading="eager"
+                  src="assets/images/aAuthMedia.webp"
+                  alt="photo"
+                />
+              </div>
+
+              <div class="auth-media-description">
+                <p class="auth-media-clue a-auth-media-clue">
+                  <a href="#">UP-GAME.PRO</a> это
+                </p>
+
+                <div class="auth-media-items">
+                  <div class="auth-media-item a-auth-media-item">
+                    <span>350+</span> продуктов
+                  </div>
+                  <div class="auth-media-item a-auth-media-item">
+                    <span>100+</span> товаров
+                  </div>
+                  <div class="auth-media-item a-auth-media-item">
+                    <span>20.000+</span> клиентов
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>
+
+
