@@ -2,6 +2,8 @@
 @import url(assets/fonts/font.css);
 @import url(assets/css/normilaze.css);
 @import url(assets/css/auth.css);
+@import url(assets/css/faq.css);
+
 header{
     background: #111111;
    width: 100%;
@@ -26,4 +28,7 @@ header p{
     header p{
           font-size: 20px;
     }
+}
+.text-wrap{
+  display: block;
 }

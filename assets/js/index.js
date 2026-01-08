@@ -174,3 +174,23 @@ if (ARememberBlock) {
       });
     }
   }
+
+const aBlock = document.querySelector('.a-faq-search-block');
+
+if (aBlock) {
+    const aInput = aBlock.querySelector('input[name="search"]');
+
+    if (aInput) {
+        aBlock.addEventListener('click', () => {
+            aInput.focus();
+        });
+
+        aInput.addEventListener('focus', () => {
+            aBlock.classList.add('active');
+        });
+
+        aInput.addEventListener('blur', () => {
+            aBlock.classList.remove('active');
+        });
+    }
+}

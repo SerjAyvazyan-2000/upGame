@@ -3,6 +3,13 @@
   min-height: 100%;
   overflow: hidden;
 }
+.a-auth-wrapper{
+  background: #0D0D0D;
+
+}
+.b-auth-wrapper{
+      background: linear-gradient(0deg, #0b0d16, #0b0d16);
+}
 .auth-section {
   padding: 242px 0 78px 0;
 }

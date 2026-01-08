@@ -50,3 +50,8 @@
         mask-image: url(Guest.svg);
   -webkit-mask-image: url(Guest.svg);
 }
+
+.icon-search{
+        mask-image: url(search.svg);
+  -webkit-mask-image: url(search.svg);
+}
