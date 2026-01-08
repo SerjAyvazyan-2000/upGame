@@ -55,3 +55,7 @@
         mask-image: url(search.svg);
   -webkit-mask-image: url(search.svg);
 }
+.icon-AarrowLeft{
+          mask-image: url(AarrowLeft.svg);
+  -webkit-mask-image: url(AarrowLeft.svg);
+}
