@@ -59,3 +59,7 @@
           mask-image: url(AarrowLeft.svg);
   -webkit-mask-image: url(AarrowLeft.svg);
 }
+.icon-paginationArrow{
+          mask-image: url(paginationArrow.svg);
+  -webkit-mask-image: url(paginationArrow.svg);
+}

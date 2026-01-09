@@ -43,3 +43,12 @@
   font-display: swap;
 }
 
+
+@font-face {
+  font-family: 'Benzin-Bold';
+  src: url("./benzin-bold.woff2") format("woff2"),
+    url("./benzin-bold.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

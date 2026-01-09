@@ -175,7 +175,7 @@ if (ARememberBlock) {
     }
   }
 
-const aBlock = document.querySelector('.a-faq-search-block');
+const aBlock = document.querySelector('.faq-search-block');
 
 if (aBlock) {
     const aInput = aBlock.querySelector('input[name="search"]');

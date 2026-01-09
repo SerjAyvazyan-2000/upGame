@@ -1,14 +1,19 @@
-/* GENERAL STYLE   ============================ */
+/* ==============Общие стили для UP-GAME И DragonHack =========*/
 .auth-wrapper {
   min-height: 100%;
   overflow: hidden;
 }
-.a-auth-wrapper{
-  background: #0D0D0D;
-
+.a-auth-wrapper {
+  background: #0d0d0d;
+  overflow: hidden;
+  min-height: 100%;
+  font-family: "Gilroy", sans-serif;
 }
-.b-auth-wrapper{
-      background: linear-gradient(0deg, #0b0d16, #0b0d16);
+.b-auth-wrapper {
+  background: linear-gradient(0deg, #0b0d16, #0b0d16);
+  overflow: hidden;
+  min-height: 100%;
+  font-family: "Inter",sans-serif;
 }
 .auth-section {
   padding: 242px 0 78px 0;
@@ -343,10 +348,10 @@
   text-decoration: underline;
   text-underline-offset: 3px;
   display: inline;
-  transition: .3s;
+  transition: 0.3s;
 }
-.auth-policy a:hover{
-  opacity: .7;
+.auth-policy a:hover {
+  opacity: 0.7;
 }
 
 .confirmation-body {
