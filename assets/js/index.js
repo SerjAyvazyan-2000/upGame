@@ -194,3 +194,78 @@ if (aBlock) {
         });
     }
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  const AWrapper = document.querySelector('.anonymously-check-wrapper');
+
+  if (!AWrapper) return;
+
+  AWrapper.addEventListener('click', function () {
+    AWrapper.classList.toggle('active');
+  });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const AWrapper = document.querySelector('.feedback-select-wrapper');
+  const AMain = document.querySelector('.feedback-select-main');
+  const AName = document.querySelector('.feedback-select-name');
+  const AOptions = document.querySelectorAll('.feedback-select-option');
+
+  if (!AWrapper || !AMain || !AName) return;
+
+  AMain.addEventListener('click', function (e) {
+    e.stopPropagation();
+    AWrapper.classList.toggle('active');
+  });
+
+  AOptions.forEach(function (option) {
+    option.addEventListener('click', function (e) {
+      e.stopPropagation();
+      AName.textContent = option.textContent;
+      AWrapper.classList.remove('active');
+    });
+  });
+
+  document.addEventListener('click', function (e) {
+    if (!AWrapper.contains(e.target)) {
+      AWrapper.classList.remove('active');
+    }
+  });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const AModalWrapper = document.querySelector('.feedback-modal-wrapper');
+  const AOpenBtns = document.querySelectorAll('.a-reviews-header-link');
+  const AModalBg = document.querySelector('.feedback-modal-bg');
+  const ACloseIcon = document.querySelector('.feedback-modal-header .icon-close');
+
+  if (!AModalWrapper) return;
+
+  AOpenBtns.forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      AModalWrapper.classList.add('active');
+            document.body.style.overflow = 'hidden'
+
+    });
+  });
+
+  if (AModalBg) {
+    AModalBg.addEventListener('click', function () {
+      AModalWrapper.classList.remove('active');
+            document.body.style.overflow = 'unset'
+
+    });
+  }
+
+  if (ACloseIcon) {
+    ACloseIcon.addEventListener('click', function () {
+      AModalWrapper.classList.remove('active');
+            document.body.style.overflow = 'unset'
+
+    });
+  }
+});

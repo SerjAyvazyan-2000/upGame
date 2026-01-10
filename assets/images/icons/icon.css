@@ -12,54 +12,84 @@
   -webkit-mask-position: center;
 }
 
-
-.icon-Email{
+.icon-Email {
   mask-image: url(Email.svg);
   -webkit-mask-image: url(Email.svg);
 }
 
-.icon-access{
-    mask-image: url(access.svg);
+.icon-access {
+  mask-image: url(access.svg);
   -webkit-mask-image: url(access.svg);
 }
-.icon-Alines{
-    mask-image: url(Alines.svg);
+.icon-Alines {
+  mask-image: url(Alines.svg);
   -webkit-mask-image: url(Alines.svg);
 }
-.icon-check{
-    mask-image: url(check.svg);
+.icon-check {
+  mask-image: url(check.svg);
   -webkit-mask-image: url(check.svg);
 }
-.icon-discord{
-    mask-image: url(discord.svg);
+.icon-discord {
+  mask-image: url(discord.svg);
   -webkit-mask-image: url(discord.svg);
 }
-.icon-vk{
-    mask-image: url(vk.svg);
+.icon-vk {
+  mask-image: url(vk.svg);
   -webkit-mask-image: url(vk.svg);
 }
-.icon-steam{
-      mask-image: url(steam.svg);
+.icon-steam {
+  mask-image: url(steam.svg);
   -webkit-mask-image: url(steam.svg);
 }
-.icon-google{
-        mask-image: url(google.svg);
+.icon-google {
+  mask-image: url(google.svg);
   -webkit-mask-image: url(google.svg);
 }
-.icon-guest{
-        mask-image: url(Guest.svg);
+.icon-guest {
+  mask-image: url(Guest.svg);
   -webkit-mask-image: url(Guest.svg);
 }
 
-.icon-search{
-        mask-image: url(search.svg);
+.icon-search {
+  mask-image: url(search.svg);
   -webkit-mask-image: url(search.svg);
 }
-.icon-AarrowLeft{
-          mask-image: url(AarrowLeft.svg);
+.icon-AarrowLeft {
+  mask-image: url(AarrowLeft.svg);
   -webkit-mask-image: url(AarrowLeft.svg);
 }
-.icon-paginationArrow{
-          mask-image: url(paginationArrow.svg);
+.icon-paginationArrow {
+  mask-image: url(paginationArrow.svg);
   -webkit-mask-image: url(paginationArrow.svg);
 }
+.icon-separator {
+  mask-image: url(separator.svg);
+  -webkit-mask-image: url(separator.svg);
+}
+.icon-undetected {
+  mask-image: url(undetected.svg);
+  -webkit-mask-image: url(undetected.svg);
+}
+.icon-AswiperIcon {
+  mask-image: url(AswiperIcon.svg);
+  -webkit-mask-image: url(AswiperIcon.svg);
+}
+.icon-close {
+  mask-image: url(close.svg);
+  -webkit-mask-image: url(close.svg);
+}
+.icon-fillStar {
+  mask-image: url(fillStar.svg);
+  -webkit-mask-image: url(fillStar.svg);
+}
+.icon-borderStar {
+  mask-image: url(borderStar.svg);
+  -webkit-mask-image: url(borderStar.svg);
+}
+
+.icon-fArrowDown {
+  mask-image: url(fArrowDown.svg);
+  -webkit-mask-image: url(fArrowDown.svg);
+}
+
+
