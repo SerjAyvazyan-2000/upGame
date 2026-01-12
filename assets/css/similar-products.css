@@ -262,23 +262,7 @@
   transform: rotate(180deg);
 }
 
-.a-reviews-header-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-.a-reviews-header-info p {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  color: #818181;
-}
-.a-reviews-header-info span {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 150%;
-  color: #ffffff;
-}
+
 
 @media screen and (max-width: 1700px) {
   .s-products-right-img {

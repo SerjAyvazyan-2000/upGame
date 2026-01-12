@@ -92,4 +92,28 @@
   -webkit-mask-image: url(fArrowDown.svg);
 }
 
+.icon-grayStar {
+  mask-image: url(fillStar.svg);
+  -webkit-mask-image: url(fillStar.svg);
+}
 
+.icon-settings {
+  mask-image: url(settings.svg);
+  -webkit-mask-image: url(settings.svg);
+}
+.icon-cash {
+  mask-image: url(cash.svg);
+  -webkit-mask-image: url(cash.svg);
+}
+.icon-electronics {
+  mask-image: url(electronics.svg);
+  -webkit-mask-image: url(electronics.svg);
+}
+.icon-receive_cash {
+  mask-image: url(receive_cash.svg);
+  -webkit-mask-image: url(receive_cash.svg);
+}
+.icon-cloud {
+  mask-image: url(cloud.svg);
+  -webkit-mask-image: url(cloud.svg);
+}

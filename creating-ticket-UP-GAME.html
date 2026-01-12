@@ -3,20 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Отзывы</title>
+    <title>Создание UP-GAME</title>
     <link rel="stylesheet" href="style.css" />
     <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
 
   <body>
-    <div class="a-reviews-wrapper">
-      <!-- ====================Вариант 1 ,без заглушки====================  -->
-      <h1 style="margin: 60px; color: red; text-align: center">
-        Вариант 1 ,без заглушки
+    <div class="b-creating-ticket-wrapper">
+      <div class="ticket-modal-wrapper b-ticket-modal-wrapper">
+        <div class="ticket-modal-bg a-ticket-modal-bg"></div>
+        <div class="ticket-modal-cnt b-ticket-modal-bg">
+     
+
+          <div class="ticket-modal-main b-ticket-modal-main">
+            <i class="icon icon-close ticket-modal-close"></i>
+            <div class="ticket-modal-header">
+              <p>Создание тикета</p>
+              <span
+                >Перед тем, как создать тикет, попробуйте найти ответ в
+                <a href="#">FAQ</a></span
+              >
+            </div>
+
+            <div class="ticket-modal-columns">
+              <div class="creating-ticket-items">
+                <div class="creating-ticket-item b-creating-ticket-item active">
+                  <div class="c-ticket-item-texts">
+                    <p>Проблема с софтом</p>
+                    <span>Сообщить о недоступности/ошибке</span>
+                  </div>
+                  <div class="c-ticket-item-icon-bg">
+                    <div
+                      class="c-ticket-item-icon a-ticket-item-icon a-ticket-red-icon"
+                    >
+                      <i class="icon icon-settings"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="creating-ticket-item b-creating-ticket-item">
+                  <div class="c-ticket-item-texts">
+                    <p>Проблема с оплатой</p>
+                    <span>Решить проблему с зачислением/покупой</span>
+                  </div>
+                  <div class="c-ticket-item-icon-bg">
+                    <div
+                      class="c-ticket-item-icon a-ticket-item-icon ticket-green-icon"
+                    >
+                      <i class="icon icon-cash"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="creating-ticket-item b-creating-ticket-item">
+                  <div class="c-ticket-item-texts">
+                    <p>Сброс HWID</p>
+                    <span>Запросить сброс привязки</span>
+                  </div>
+                  <div class="c-ticket-item-icon-bg">
+                    <div
+                      class="c-ticket-item-icon a-ticket-item-icon ticket-blue-icon"
+                    >
+                      <i class="icon icon-electronics"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="creating-ticket-item b-creating-ticket-item">
+                  <div class="c-ticket-item-texts">
+                    <p>Сотрудничество</p>
+                    <span>Коммерческий вопрос по продажам</span>
+                  </div>
+                  <div class="c-ticket-item-icon-bg">
+                    <div
+                      class="c-ticket-item-icon a-ticket-item-icon ticket-gold-icon"
+                    >
+                      <i class="icon icon-receive_cash"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="creating-ticket-item b-creating-ticket-item">
+                  <div class="c-ticket-item-texts">
+                    <p>Возникла другая проблема</p>
+                    <span
+                      >Выберите, если проблему нельзя отнести к категориям
+                      выше</span
+                    >
+                  </div>
+                  <div class="c-ticket-item-icon-bg">
+                    <div
+                      class="c-ticket-item-icon a-ticket-item-icon ticket-blueviolet-icon"
+                    >
+                      <i class="icon icon-cloud"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <button class="ticket-modal-btn b-ticket-modal-btn">
+                  Создать обращение
+                </button>
+              </div>
+              <div class="ticket-modal-media">
+                <img
+                  width="626"
+                  height="644"
+                  loading="lazy"
+                  src="assets/images/ticketModalMedia2.webp"
+                  alt="photo"
+                />
+
+                <div class="ticket-media-texts">
+                  <div class="ticket-media-titles b-ticket-media-titles">
+                    <p>Время работы</p>
+                    <span>службы ТП: </span>
+
+                  </div>
+                  <span class="ticket-media-data ">23:00-03:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 style="color: red; text-align: center; margin: 120px 0">
+        Штобы открыть модальное окно Создание тикета нажмите на кнопку
       </h1>
+      <h2 style="color: red; text-align: center; margin: 120px 0">
+        блок отзывов тут просто ставил штобы вы праверели задний фон модальки
+      </h2>
+      <button class="open-ticket-modal">Создание тикета</button>
+
       <section class="a-reviews-section">
         <div class="a-reviews-container">
           <div class="a-reviews-body">
@@ -879,524 +999,8 @@
           </div>
         </div>
       </section>
-
-      <!-- ====================Вариант 2 ,С заглушкой ====================  -->
-      <h1 style="margin: 60px; color: red; text-align: center">
-        Вариант 2 ,С заглушкой
-      </h1>
-
-      <section class="a-reviews-section">
-        <div class="a-reviews-container">
-          <div class="a-reviews-body">
-            <div class="a-reviews-header">
-              <div class="a-reviews-header-titles">
-                <p>Отзывы</p>
-                <a class="a-reviews-header-link" href="#">Оставить отзыв</a>
-              </div>
-              <div class="a-reviews-header-info">
-                <p>Общий рейтинг:</p>
-
-                <div class="a-reviews-header-stars">
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-grayStar"></i>
-                </div>
-
-                <span>4.5</span>
-              </div>
-            </div>
-
-            <div class="reviews-swiper-block">
-              <div class="reviews-swiper swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="review-slide reviews-slide-positive">
-                      <div class="review-slide-status">
-                        <p class="a-review-first">Первый отзыв</p>
-                        <p class="a-slide-positive">Положительный</p>
-                      </div>
-
-                      <div class="review-slide-cnt">
-                        <div class="review-slide-description">
-                          <div class="review-slide-avatar">
-                            <img
-                              width="60"
-                              height="60"
-                              loading="lazy"
-                              src="assets/images/reviewSlideAvatar.webp"
-                              alt="photo"
-                            />
-                          </div>
-                          <div class="review-slide-texts">
-                            <p>Cayenna</p>
-                            <div class="review-slide-stars">
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="review-slide-data">26.05.2024</p>
-                      </div>
-
-                      <p class="review-text-descriptin">Все супер!</p>
-                      <p class="review-author-text">
-                        3 день играю все супер. Визуальные функции работают
-                        исправно, цена более чем
-                      </p>
-                    </div>
-                  </div>
-                  <div class="swiper-slide">
-                    <div class="review-slide reviews-slide-negative">
-                      <div class="review-slide-status">
-                        <p class="a-slide-negative">Отрицательный</p>
-                      </div>
-
-                      <div class="review-slide-cnt">
-                        <div class="review-slide-description">
-                          <div class="review-slide-avatar">
-                            <img
-                              width="60"
-                              height="60"
-                              loading="lazy"
-                              src="assets/images/reviewSlideAvatar.webp"
-                              alt="photo"
-                            />
-                          </div>
-                          <div class="review-slide-texts">
-                            <p>Cayenna</p>
-
-                            <div class="review-slide-stars">
-                              <i class="icon icon-fillStar"></i>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="review-slide-data">26.05.2024</p>
-                      </div>
-
-                      <p class="review-text-descriptin">Отвратительно</p>
-                      <p class="review-author-text">
-                        Отвратительно ощущаю себя в игре с этим читом.
-                        Оптимизация на нуле...
-                        <a class="read-more" href="#">Читать полностью</a>
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review-slide-empty-wrapper">
-                    <div class="review-slide-empty">
-                      <div class="review-slide-empty-texts">
-                        <p>Пока тут пусто</p>
-                        <span
-                          >Поделись своим мнением об этом товаре и помоги другим
-                          пользователям не ошибиться в выборе!</span
-                        >
-                      </div>
-                      <div class="r-slide-empty-img">
-                        <img
-                          width="512"
-                          height="750"
-                          loading="lazy"
-                          src="assets/images/slideEmptyImg.webp"
-                          alt="photo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="reviews-swiper-scrollbar swiper-scrollbar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ====================Вариант 3 ,С заглушкой ====================  -->
-      <h1 style="margin: 60px; color: red; text-align: center">
-        Вариант 3 ,С заглушкой
-      </h1>
-
-      <section class="a-reviews-section">
-        <div class="a-reviews-container">
-          <div class="a-reviews-body">
-            <div class="a-reviews-header">
-              <div class="a-reviews-header-titles">
-                <p>Отзывы</p>
-                <a class="a-reviews-header-link" href="#">Оставить отзыв</a>
-              </div>
-              <div class="a-reviews-header-info">
-                <p>Общий рейтинг:</p>
-
-                <div class="a-reviews-header-stars">
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-fillStar"></i>
-                  <i class="icon icon-grayStar"></i>
-                </div>
-
-                <span>4.5</span>
-              </div>
-            </div>
-
-            <div class="reviews-swiper-block">
-              <div class="reviews-swiper swiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="review-slide reviews-slide-positive">
-                      <div class="review-slide-status">
-                        <p class="a-review-first">Первый отзыв</p>
-                        <p class="a-slide-positive">Положительный</p>
-                      </div>
-
-                      <div class="review-slide-cnt">
-                        <div class="review-slide-description">
-                          <div class="review-slide-avatar">
-                            <img
-                              width="60"
-                              height="60"
-                              loading="lazy"
-                              src="assets/images/reviewSlideAvatar.webp"
-                              alt="photo"
-                            />
-                          </div>
-                          <div class="review-slide-texts">
-                            <p>Cayenna</p>
-                            <div class="review-slide-stars">
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <i class="icon icon-fillStar"></i>
-                              <svg
-                                width="20"
-                                height="19"
-                                viewBox="0 0 20 19"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                              >
-                                <path
-                                  d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                                  fill="#1B1B1B"
-                                  stroke="#FFC700"
-                                />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                        <p class="review-slide-data">26.05.2024</p>
-                      </div>
-
-                      <p class="review-text-descriptin">Все супер!</p>
-                      <p class="review-author-text">
-                        3 день играю все супер. Визуальные функции работают
-                        исправно, цена более чем
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide review-slide-empty-wrapper">
-                    <div class="review-slide-empty">
-                      <div class="review-slide-empty-texts">
-                        <p>Пока тут пусто</p>
-                        <span
-                          >Поделись своим мнением об этом товаре и помоги другим
-                          пользователям не ошибиться в выборе!</span
-                        >
-                      </div>
-                      <div class="r-slide-empty-img">
-                        <img
-                          width="512"
-                          height="750"
-                          loading="lazy"
-                          src="assets/images/slideEmptyImg.webp"
-                          alt="photo"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="reviews-swiper-scrollbar swiper-scrollbar"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      
-      <!-- ====================Модальное окно для написание отзыва  ====================  -->
-
-      <div class="feedback-modal-wrapper">
-        <div class="feedback-modal-bg"></div>
-        <div class="feedback-modal-cnt">
-          <div class="feedback-modal-header">
-            <p>Написание отзыва</p>
-            <i class="icon icon-close"></i>
-          </div>
-          <div class="feedback-user-cnt">
-            <div class="feedback-user-info">
-              <div class="feedback-user-avatar">
-                <img
-                  width="133"
-                  height="25"
-                  loading="lazy"
-                  src="assets/images/feedbackAvatar.webp"
-                  alt="photo"
-                />
-              </div>
-              <div class="feedback-user-description">
-                <p class="feedback-user-name">Nickame12</p>
-                <div class="anonymously-check-wrapper">
-                  <div class="feedback-anonymously-check">
-                    <i class="icon icon-check"></i>
-                  </div>
-                  <p>Оставить отзыв анонимно</p>
-                </div>
-              </div>
-            </div>
-            <p class="feedback-user-data">26.05.2024</p>
-          </div>
-          <div class="feedback-user-tolls">
-            <div class="feedback-product-rating">
-              <p>Оценка товара</p>
-              <div class="feedback-rating-stars">
-                <i class="icon icon-fillStar"></i>
-                <i class="icon icon-fillStar"></i>
-                <i class="icon icon-fillStar"></i>
-                <i class="icon icon-fillStar"></i>
-                <svg
-                  width="28"
-                  height="28"
-                  viewBox="0 0 28 28"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M14.0059 1.26758C14.2306 0.577078 15.2069 0.577072 15.4316 1.26758L17.8779 8.79688C18.1792 9.72392 19.0438 10.3516 20.0186 10.3516H27.9346C28.6611 10.3516 28.9628 11.281 28.375 11.708L21.9707 16.3613C21.1822 16.9343 20.8521 17.95 21.1533 18.877L23.5996 26.4062C23.8237 27.0971 23.033 27.6711 22.4453 27.2441L16.041 22.5908C15.2526 22.0182 14.1849 22.0182 13.3965 22.5908L6.99219 27.2441C6.40451 27.6711 5.61378 27.0971 5.83789 26.4062L8.28418 18.877C8.58537 17.95 8.25528 16.9343 7.4668 16.3613L1.0625 11.708C0.474728 11.281 0.776409 10.3516 1.50293 10.3516H9.41895C10.3937 10.3516 11.2583 9.72392 11.5596 8.79688L14.0059 1.26758Z"
-                    fill="#1B1B1B"
-                    stroke="#FFC700"
-                    stroke-width="1.5"
-                  />
-                </svg>
-              </div>
-            </div>
-            <div class="feedback-select">
-              <p class="feedback-select-title">Выберите заголовок</p>
-              <div class="feedback-select-wrapper">
-                <div class="feedback-select-main">
-                  <p class="feedback-select-name">Заслуживает внимания</p>
-                  <i class="icon icon-fArrowDown"></i>
-                </div>
-                <div class="feedback-select-options">
-                  <div class="feedback-select-option">Полный провал</div>
-                  <div class="feedback-select-option">Ни рыба, ни мясо</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="feedback-text-wrapper">
-            <p class="feedback-text-title">Текст отзыва</p>
-            <div class="feedback-textarea">
-              <label>
-                <textarea placeholder="Введите текст" name="text"></textarea>
-              </label>
-            </div>
-          </div>
-
-          <a href="#" class="publish-review-btn">Опубликовать отзыв</a>
-        </div>
-      </div>
-
-      <!-- ====================Модальное окно для кнопке Читать полностью    ====================  -->
-
-      <div class="read-full-modal-wrapper">
-        <div class="read-full-modal-bg"></div>
-        <div class="read-full-modal-cnt">
-          <div class="read-full-modal-header">
-            <p>Отрицательный</p>
-            <i class="icon icon-close"></i>
-          </div>
-
-          <div class="read-full-modal-main">
-            <div class="read-full-user-info">
-              <div class="read-full-user-avatar">
-                <img
-                  width="133"
-                  height="25"
-                  loading="lazy"
-                  src="assets/images/feedbackAvatar.webp"
-                  alt="photo"
-                />
-              </div>
-              <div class="read-full-user-description">
-                <p class="read-full-user-name">Cayenna</p>
-                <div class="read-full-user-stars">
-                  <i class="icon icon-fillStar"></i>
-                  <svg
-                    width="20"
-                    height="19"
-                    viewBox="0 0 20 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                      fill="#1B1B1B"
-                      stroke="#FFC700"
-                    />
-                  </svg>
-
-                  <svg
-                    width="20"
-                    height="19"
-                    viewBox="0 0 20 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                      fill="#1B1B1B"
-                      stroke="#FFC700"
-                    />
-                  </svg>
-
-                  <svg
-                    width="20"
-                    height="19"
-                    viewBox="0 0 20 19"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9.33691 0.845703C9.48659 0.385049 10.1384 0.385046 10.2881 0.845703L11.9189 5.86426C12.1198 6.48229 12.6959 6.90137 13.3457 6.90137H18.623C19.1074 6.90139 19.3088 7.52097 18.917 7.80566L14.6475 10.9072C14.1217 11.2892 13.9017 11.9669 14.1025 12.585L15.7334 17.6035C15.8831 18.0641 15.3557 18.4476 14.9639 18.1631L10.6943 15.0605C10.1686 14.6786 9.45639 14.6786 8.93066 15.0605L4.66113 18.1631C4.26929 18.4476 3.74194 18.0641 3.8916 17.6035L5.52246 12.585C5.72327 11.9669 5.50327 11.2892 4.97754 10.9072L0.708008 7.80566C0.316159 7.52097 0.517607 6.90139 1.00195 6.90137H6.2793C6.92914 6.90137 7.50524 6.48229 7.70605 5.86426L9.33691 0.845703Z"
-                      fill="#1B1B1B"
-                      stroke="#FFC700"
-                    />
-                  </svg>
-
-                  <svg
-                    width="28"
-                    height="28"
-                    viewBox="0 0 28 28"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M14.0059 1.26758C14.2306 0.577078 15.2069 0.577072 15.4316 1.26758L17.8779 8.79688C18.1792 9.72392 19.0438 10.3516 20.0186 10.3516H27.9346C28.6611 10.3516 28.9628 11.281 28.375 11.708L21.9707 16.3613C21.1822 16.9343 20.8521 17.95 21.1533 18.877L23.5996 26.4062C23.8237 27.0971 23.033 27.6711 22.4453 27.2441L16.041 22.5908C15.2526 22.0182 14.1849 22.0182 13.3965 22.5908L6.99219 27.2441C6.40451 27.6711 5.61378 27.0971 5.83789 26.4062L8.28418 18.877C8.58537 17.95 8.25528 16.9343 7.4668 16.3613L1.0625 11.708C0.474728 11.281 0.776409 10.3516 1.50293 10.3516H9.41895C10.3937 10.3516 11.2583 9.72392 11.5596 8.79688L14.0059 1.26758Z"
-                      fill="#1B1B1B"
-                      stroke="#FFC700"
-                      stroke-width="1.5"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <p class="read-full-user-data">26.05.2024</p>
-          </div>
-
-          <div class="read-full-modal-texts">
-            <p>Отвратительно</p>
-            <span>
-              Этот чит — одно из самых разочаровывающих и бесполезных “решений”,
-              с которыми мне когда-либо доводилось сталкиваться. Начнём с того,
-              что он работает через раз: то не запускается, то зависает, то
-              просто вылетает без объяснений. Интерфейс выглядит так, будто его
-              собирали на коленке за один вечер, всё криво, ничего не подписано,
-              половина настроек вообще не реагирует на изменения.
-              Производительность падает катастрофически — игра начинает фризить
-              каждые пару секунд, а иногда даже полностью зависает. Никаких
-              “плавных и аккуратных функций”, о которых обещали, тут и близко
-              нет. Всё сделано грубо, неаккуратно, и выглядит так, будто
-              разработчики сами не понимают, как работают их собственные
-              механики. Отдельный “плюс” — постоянные детекты. Античит ловит его
-              так легко, будто этот чит специально создан, чтобы отправлять
-              людей в бан. Баны раздают пачками, и никакая “защита” не помогает.
-              То есть мало того, что сам софт ужасный — он ещё и напрямую
-              приводит к потере аккаунта. Поддержка тоже “радует”: отвечают
-              неделями, а если и пишут, то в стиле “попробуйте перезагрузить ПК”
-              или “мы в курсе проблемы”. При этом ничего по факту не
-              исправляется. Обновления выходят редко, а те, что выходят, только
-              ломают то немногое, что ещё как-то работало. В итоге это не просто
-              плохой продукт — это откровенная трата времени и нервов.
-              Нечестная, сырая, недоделанная поделка, которая только создаёт
-              проблемы. Даже близко не стоит тех денег, которые за него требуют.
-              Я бы не рекомендовал это никому, даже из любопытства.
-            </span>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script src="assets/js/swiper.js"></script>
     <script src="assets/js/index.js"></script>
   </body>
 </html>

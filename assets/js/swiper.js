@@ -64,11 +64,11 @@ const reviewsSwiper = new Swiper(".reviews-swiper", {
 
   breakpoints: {
     320: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     420: {
-      slidesPerView: 1.2,
+      slidesPerView:1,
       spaceBetween: 10,
     },
     576: {
@@ -86,10 +86,10 @@ const reviewsSwiper = new Swiper(".reviews-swiper", {
     },
 
     1350: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
     },
     1600: {
-      slidesPerView: 3,
+      slidesPerView: 3.5,
     },
     1700: {
       slidesPerView: 4,

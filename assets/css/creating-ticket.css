@@ -1,0 +1,551 @@
+/* ==============Общие стили для UP-GAME И DragonHack =========*/
+.ticket-modal-wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  transform: scale(0.5);
+}
+.ticket-modal-wrapper.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1);
+}
+.ticket-modal-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.ticket-modal-cnt {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 1380px;
+  margin: 0 auto;
+}
+.ticket-modal-main {
+  max-width: 1380px;
+  width: 100%;
+  padding: 60px 48px;
+  border-radius: 10px;
+  position: relative;
+
+}
+.ticket-modal-main::-webkit-scrollbar {
+  width: 3px;
+}
+.ticket-modal-main::-webkit-scrollbar-track {
+  background: #3f3f3f;
+  border-radius: 10px;
+}
+.ticket-modal-main::-webkit-scrollbar-thumb {
+  background: #626262;
+  border-radius: 10px;
+}
+.ticket-modal-main::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.ticket-modal-close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  background: #999999;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.ticket-modal-close:hover {
+  background: white;
+}
+.ticket-modal-header {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.ticket-modal-header p {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 146%;
+  color: #ffffff;
+}
+.ticket-modal-header span {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 146%;
+  color: #939393;
+}
+.ticket-modal-header span a {
+  text-decoration: underline;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 146%;
+  color: #939393;
+  text-underline-offset: 3px;
+  transition: 0.3s;
+}
+.ticket-modal-header span a:hover {
+  color: white;
+}
+.ticket-modal-columns {
+  margin-top: 32px;
+  display: flex;
+  gap: 32px;
+  width: 100%;
+}
+.creating-ticket-items {
+  max-width: 626px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.creating-ticket-item {
+  padding: 24px 19px 24px 24px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.c-ticket-item-texts p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 119%;
+  color: #ffffff;
+}
+.c-ticket-item-texts span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 119%;
+  margin-top: 4px;
+  display: block;
+  color: #ffffffb2;
+}
+
+.c-ticket-item-icon-bg {
+  width: 51px;
+  height: 51px;
+  flex: 0 0 51px;
+  border: 1px solid #ffffff80;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-ticket-item-icon {
+  width: 40px;
+  height: 40px;
+  flex: 0 0 40px;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-ticket-item-icon i {
+  font-size: 24px;
+  background: #ffffff80;
+  transition: 0.3s;
+}
+.ticket-green-icon {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      180deg,
+      rgba(95, 194, 79, 0) 50%,
+      rgba(95, 194, 79, 0.2) 100%
+    );
+}
+.ticket-blue-icon {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      180deg,
+      rgba(19, 122, 190, 0) 50%,
+      rgba(19, 122, 190, 0.2) 100%
+    );
+}
+.ticket-gold-icon {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      180deg,
+      rgba(255, 140, 2, 0) 50%,
+      rgba(255, 140, 2, 0.2) 100%
+    );
+}
+.ticket-blueviolet-icon {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      180deg,
+      rgba(99, 91, 255, 0) 50%,
+      rgba(99, 91, 255, 0.2) 100%
+    );
+}
+.ticket-modal-media {
+  height: 644px;
+  position: relative;
+  z-index: 2;
+}
+.ticket-media-texts {
+  position: absolute;
+  left: 40px;
+  top: 40px;
+}
+.ticket-media-titles p {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 119%;
+  position: relative;
+  z-index: 2;
+}
+.ticket-media-data {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 119%;
+  color: #ffffff;
+  margin-top: 60px;
+  display: block;
+}
+.ticket-media-titles span {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 119%;
+  color: #ffffff;
+}
+.ticket-modal-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.open-ticket-modal {
+  padding: 20px;
+  margin: 20px auto 0;
+  display: flex;
+}
+
+.ticket-modal-btn {
+  padding: 21px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  margin-top: 22px;
+  text-align: center;
+  transition: 0.3s;
+}
+.ticket-modal-btn:hover {
+  opacity: 0.7;
+}
+
+/* ===== UP GAME STYLE======= */
+.b-creating-ticket-wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background: black;
+  font-family: "Gilroy", sans-serif;
+}
+.b-ticket-modal-bg {
+  background: #0D0D0D;
+
+  z-index: 2;
+}
+.b-ticket-modal-wrapper {
+  padding: 100px 14px 14px 14px;
+}
+.b-ticket-modal-main {
+  background: #0E0E0E;
+
+  backdrop-filter: blur(42px);
+  -webkit-backdrop-filter: blur(42px);
+  max-height: 90vh;
+  overflow: auto;
+}
+
+.b-creating-ticket-item {
+  background: #FFFFFF05;
+
+
+}
+.b-creating-ticket-item:hover {
+  background: #FFFFFF0D;
+}
+.b-creating-ticket-item:hover .a-ticket-item-icon i {
+  background: #FFCB11;
+
+}
+.b-creating-ticket-item.active {
+  background: #FFFFFF0D;
+}
+.b-creating-ticket-item.active .a-ticket-item-icon i {
+  background: #FFCB11;
+}
+.b-ticket-media-titles p::after {
+background: #392F07;
+
+  content: "";
+  width: 90%;
+  height: 86%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  z-index: -1;
+}
+.b-ticket-media-titles p {
+  color: #FFC700;
+
+}
+.b-ticket-modal-btn {
+  background: linear-gradient(39.97deg, #FFE073 -14.96%, #FFC700 137.97%);
+  color: #5F4E11;
+  border: 1px solid #FFE99D;
+  border-radius: 10px;
+}
+
+
+/* ===== DragonHack STYLE======= */
+
+.a-ticket-modal-bg {
+  background: #050509e5;
+  z-index: 2;
+}
+.a-creating-ticket-wrapper {
+  background: linear-gradient(0deg, #10121e, #10121e);
+  min-height: 100%;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+.a-ticket-modal-wrapper {
+  padding: 100px 14px 14px 14px;
+}
+.a-ticket-modal-title {
+  padding: 30px;
+  border: 1px solid #ffffff33;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1239px;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+.a-ticket-title-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+.a-ticket-title-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.a-ticket-modal-title p {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  color: #ffffff;
+  text-align: center;
+}
+.a-ticket-modal-main {
+  background: #0b0d17;
+  backdrop-filter: blur(42px);
+  -webkit-backdrop-filter: blur(42px);
+  margin: 42px auto 0;
+  max-height: 70vh;
+  overflow: auto;
+}
+.a-creating-ticket-item {
+  background: #ffffff05;
+}
+.a-creating-ticket-item:hover {
+  background: #ffffff0d;
+}
+.a-creating-ticket-item:hover .a-ticket-item-icon i {
+  background: #dd123d;
+}
+.a-creating-ticket-item.active {
+  background: #ffffff0d;
+}
+.a-creating-ticket-item.active .a-ticket-item-icon i {
+  background: #dd123d;
+}
+.a-ticket-red-icon {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    linear-gradient(
+      180deg,
+      rgba(221, 18, 61, 0) 50%,
+      rgba(221, 18, 61, 0.2) 100%
+    );
+}
+.a-ticket-modal-btn {
+  background: radial-gradient(
+      70.01% 728.48% at 45.08% 77.53%,
+      rgba(221, 18, 61, 0.5) 0%,
+      rgba(14, 16, 28, 0.5) 100%
+    ),
+    linear-gradient(0deg, #0e101c, #0e101c);
+  color: #ffffff;
+  border: 1px solid #ffffff33;
+  border-radius: 10px;
+}
+.a-ticket-media-titles p::after {
+  background: #3a0813;
+
+  content: "";
+  width: 90%;
+  height: 86%;
+  position: absolute;
+  left: 0;
+  top: 6px;
+  z-index: -1;
+}
+.a-ticket-media-titles p {
+  color: #dd123d;
+}
+
+
+@media screen and (max-width: 1250px) {
+  /* ==============Общие стили для UP-GAME И DragonHack =========*/
+
+  .creating-ticket-items {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* ==============Общие стили для UP-GAME И DragonHack =========*/
+
+  .ticket-modal-columns {
+    flex-direction: column;
+  }
+  .creating-ticket-items {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* ==============Общие стили для UP-GAME И DragonHack =========*/
+
+  .ticket-modal-main {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* ==============Общие стили для UP-GAME И DragonHack =========*/
+
+  .ticket-media-data {
+    font-size: 22px;
+    margin-top: 40px;
+  }
+  .ticket-modal-media {
+    height: 444px;
+  }
+
+  .ticket-modal-close {
+    right: 14px;
+    top: 14px;
+    font-size: 16px;
+  }
+  .ticket-modal-header p {
+    font-size: 22px;
+    line-height: 126%;
+  }
+  .ticket-modal-header span {
+    font-size: 16px;
+  }
+  .ticket-modal-header span a {
+    font-size: 16px;
+  }
+  .ticket-modal-columns {
+    margin-top: 15px;
+  }
+  
+  .ticket-modal-btn {
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 12px;
+  }
+  .ticket-media-texts {
+    top: 20px;
+    left: 20px;
+  }
+   .ticket-media-titles p {
+    font-size: 22px;
+    max-width: max-content;
+  }
+  .ticket-media-titles p::after {
+    top: 4px;
+  }
+  .ticket-media-titles span {
+    font-size: 22px;
+  }
+
+  /* ===== UP GAME STYLE======= */
+  .b-ticket-modal-wrapper {
+    padding: 20px 14px 14px 14px;
+}
+
+  /* ===== DragonHack STYLE======= */
+
+  .a-ticket-modal-wrapper {
+    padding: 20px 14px 81px 20px;
+  }
+  .a-ticket-modal-main {
+    margin: 20px auto 0;
+  }
+  .a-ticket-modal-title p {
+    font-size: 18px;
+  }
+  .a-ticket-modal-title {
+    padding: 20px;
+    border-radius: 6px;
+  }
+
+  .creating-ticket-item {
+    padding: 20px;
+    border-radius: 6px;
+  }
+  .c-ticket-item-texts p {
+    font-size: 18px;
+  }
+  .c-ticket-item-texts span {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .c-ticket-item-icon-bg {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 5px;
+  }
+  .c-ticket-item-icon {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 30px;
+    border-radius: 3px;
+  }
+  .c-ticket-item-icon i {
+    font-size: 18px;
+  }
+
+ 
+
+}
