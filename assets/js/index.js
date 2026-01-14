@@ -1,5 +1,5 @@
 const AAuthInputs = document.querySelectorAll(
-  ".a-auth-form-input label input, .b-auth-form-input label input"
+  ".a-auth-form-input label input, .b-auth-form-input label input, .payment-email-input label input"
 );
 
 if (AAuthInputs.length) {
@@ -314,3 +314,94 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const AModalWrapper = document.querySelector(".ticket-modal-wrapper");
+  const AOpenBtns = document.querySelectorAll(".open-ticket-modal");
+  const AModalBg = document.querySelector(".a-ticket-modal-bg");
+  const ACloseIcon = document.querySelector(
+    ".ticket-modal-close"
+  );
+
+  if (!AModalWrapper) return;
+
+  AOpenBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      AModalWrapper.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (AModalBg) {
+    AModalBg.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+
+  if (ACloseIcon) {
+    ACloseIcon.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+});
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const AModalWrapper = document.querySelector(".payment-modal-wrapper ");
+  const AOpenBtns = document.querySelectorAll(".open-payment-modal");
+  const AModalBg = document.querySelector(".payment-modal-bg ");
+  const ACloseIcon = document.querySelector(
+    ".ticket-modal-close"
+  );
+
+  if (!AModalWrapper) return;
+
+  AOpenBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      AModalWrapper.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (AModalBg) {
+    AModalBg.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+
+  if (ACloseIcon) {
+    ACloseIcon.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+});
+
+
+// const quizWrapper = document.querySelector('.quiz-question-items');
+
+// if (quizWrapper) {
+//   const aElements = quizWrapper.querySelectorAll('.quiz-question-item');
+
+//   aElements.forEach(item => {
+//     item.addEventListener('click', function() {
+//       aElements.forEach(el => el.classList.remove('active'));
+    
+//       this.classList.add('active');
+      
+//       console.log("Выбран ответ:", this.innerText);
+//     });
+//   });
+// }

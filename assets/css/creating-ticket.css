@@ -34,6 +34,7 @@
   width: 100%;
   max-width: 1380px;
   margin: 0 auto;
+  height: max-content;
 }
 .ticket-modal-main {
   max-width: 1380px;
@@ -419,6 +420,7 @@ background: #392F07;
 .a-ticket-media-titles p {
   color: #dd123d;
 }
+
 
 
 @media screen and (max-width: 1250px) {

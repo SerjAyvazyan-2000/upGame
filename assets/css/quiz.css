@@ -1,0 +1,318 @@
+/* ==============Общие стили для ВИКТОРИНА =========*/
+
+.quiz-page-wrapper {
+  background: #0d0d0d;
+  overflow: hidden;
+  min-height: 100%;
+  font-family: "Gilroy", sans-serif;
+  position: relative;
+  z-index: 2;
+}
+.quiz-page-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.quiz-page-bg img {
+  width: 100%;
+  height: 100%;
+}
+
+.quiz-modal-wrapper {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  max-width: 1240px;
+  width: 100%;
+  top: 100px;
+  min-height: 166px;
+  background: #070707;
+  border: 1px solid #ffffff33;
+  box-shadow: 0px 4px 100px 5px #080808;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.quiz-modal-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.quiz-modal-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.quiz-modal-logo {
+  max-width: 248px;
+  width: 100%;
+  display: flex;
+}
+.quiz-modal-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.quiz-modal-cnt {
+  padding: 24px 24px 24px 80px;
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
+.quiz-modal-link {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 18px;
+  color: #ffffffb2;
+  transition: 0.3s;
+}
+.quiz-modal-link:hover {
+  color: gold;
+}
+.quiz-question-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  text-align: center;
+  color: #ffffff;
+}
+.quiz-question-items {
+  margin-top: 21px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 527px;
+  width: 100%;
+  column-gap: 37px;
+  row-gap: 10px;
+}
+.quiz-question-item {
+  background: linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    radial-gradient(
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+  padding: 6px;
+  border: 1px solid #ffffffb2;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: #ffffff;
+  flex: 1 1 45%;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+.quiz-question-item::after {
+  content: "";
+  background: radial-gradient(
+    67.34% 270.83% at 38.2% 143.06%,
+    rgba(221, 38, 25, 0.2) 0%,
+    rgba(221, 38, 25, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.quiz-question-item::before {
+  content: "";
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(8, 227, 8, 0.2) 0%,
+    rgba(8, 227, 8, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.quiz-question-item.wrong-answer::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quiz-question-item.wrong-answer {
+  border: 1px solid #dd2619b2;
+  color: #dd2619b2;
+}
+
+.quiz-question-item::before {
+  content: "";
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(8, 227, 8, 0.2) 0%,
+    rgba(8, 227, 8, 0) 100%
+  );
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.quiz-question-item.correct-answer::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+.quiz-question-item.correct-answer {
+  border: 1px solid #08e308;
+  color: #08e308;
+}
+.quiz-modal-buttons {
+  max-width: 299px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.quiz-try-again-btn {
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23.04px;
+  transition: 0.3s;
+}
+
+.quiz-try-again-link {
+  padding: 10px;
+  border: 1px solid #ffffff4d;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: #ffffff;
+  transition: 0.3s;
+  border-radius: 5px;
+  background: transparent;
+}
+.quiz-try-again-link:hover {
+  border: 1px solid gold;
+  color: gold;
+}
+.quiz-finish-link {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23.04px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 11px;
+  border-radius: 5px;
+  white-space: nowrap;
+  max-width: 299px;
+  width: 100%;
+  justify-content: center;
+  transition: 0.3s;
+}
+.quiz-finish-icon {
+  max-width: 22px;
+  width: 100%;
+  display: flex;
+  flex: 0 0 22px;
+}
+/* ============== стили для ВИКТОРИНА зиму  =========*/
+
+.winter-try-again-btn {
+  background: #2f9ef9;
+  color: #ffffff;
+}
+.winter-try-again-btn:hover {
+  background: gold;
+}
+.winter-finish-link {
+  background: #2f9ef9;
+  color: #ffffff;
+}
+.winter-finish-link:hover {
+  background: gold;
+}
+
+@media screen and (max-width: 1200px) {
+  .quiz-modal-cnt {
+    padding: 24px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .quiz-modal-cnt {
+    flex-direction: column;
+  }
+  .quiz-modal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .quiz-modal-wrapper {
+    top: 50px;
+    max-height: 80vh;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .quiz-modal-logo {
+    max-width: 150px;
+  }
+  .quiz-modal-link {
+    margin-top: 15px;
+    font-size: 16px;
+  }
+  .quiz-question-text {
+    font-size: 18px;
+    line-height: 110%;
+  }
+  .quiz-modal-cnt {
+    padding: 14px;
+    gap: 15px;
+  }
+  .quiz-question-items {
+    gap: 10px;
+    margin-top: 15px;
+    flex-direction: column;
+  }
+  .quiz-modal-buttons {
+    max-width: 100%;
+  }
+  .quiz-try-again-btn {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .quiz-finish-link {
+    max-width: 100%;
+  }
+}

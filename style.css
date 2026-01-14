@@ -8,6 +8,9 @@
 @import url(assets/css/reviews.css);
 @import url(assets/css/control-game.css);
 @import url(assets/css/creating-ticket.css);
+@import url(assets/css/not-found.css);
+@import url(assets/css/payment-order.css);
+@import url(assets/css/quiz.css);
 
 header {
   background: #111111;

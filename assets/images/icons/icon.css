@@ -117,3 +117,19 @@
   mask-image: url(cloud.svg);
   -webkit-mask-image: url(cloud.svg);
 }
+.icon-sort{
+    mask-image: url(sort.svg);
+  -webkit-mask-image: url(sort.svg);
+}
+.icon-star{
+    mask-image: url(star.svg);
+  -webkit-mask-image: url(star.svg);
+}
+.icon-popular{
+    mask-image: url(popular.svg);
+  -webkit-mask-image: url(popular.svg);
+}
+.icon-promoCode{
+    mask-image: url(promoCode.svg);
+  -webkit-mask-image: url(promoCode.svg);
+}
