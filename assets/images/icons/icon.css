@@ -54,6 +54,10 @@
   mask-image: url(search.svg);
   -webkit-mask-image: url(search.svg);
 }
+.icon-search2 {
+  mask-image: url(search2.svg);
+  -webkit-mask-image: url(search2.svg);
+}
 .icon-AarrowLeft {
   mask-image: url(AarrowLeft.svg);
   -webkit-mask-image: url(AarrowLeft.svg);
@@ -132,4 +136,8 @@
 .icon-promoCode{
     mask-image: url(promoCode.svg);
   -webkit-mask-image: url(promoCode.svg);
+}
+.icon-descending_sorting{
+    mask-image: url(descending_sorting.svg);
+  -webkit-mask-image: url(descending_sorting.svg);
 }

@@ -227,7 +227,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 11px;
+  padding: 11px 45px;
   border-radius: 5px;
   white-space: nowrap;
   max-width: 299px;
@@ -241,7 +241,7 @@
   display: flex;
   flex: 0 0 22px;
 }
-/* ============== стили для ВИКТОРИНА зиму  =========*/
+/* ============== ЗИМА =========*/
 
 .winter-try-again-btn {
   background: #2f9ef9;
@@ -256,6 +256,58 @@
 }
 .winter-finish-link:hover {
   background: gold;
+}
+
+/* ============== ОСЕНЬ =========*/
+
+.autumn-try-again-btn {
+  background: #e95002;
+  color: #ffffff;
+}
+.autumn-try-again-btn:hover {
+  background: gold;
+}
+.autumn-finish-link {
+  background: #e95002;
+  color: #ffffff;
+}
+.autumn-finish-link:hover {
+  background: gold;
+  color: #e95002;
+}
+/* ============== ВЕСНА =========*/
+.spring-try-again-btn {
+  background: #fd3a71;
+  color: #ffffff;
+}
+.spring-try-again-btn:hover {
+  background: gold;
+}
+.spring-finish-link {
+  background: #fd3a71;
+  color: #ffffff;
+}
+.spring-finish-link:hover {
+  background: gold;
+  color: #e95002;
+}
+
+/* ============== ЛЕТО =========*/
+
+.summer-try-again-btn {
+  background: #00ffae;
+  color: #0e0e0e;
+}
+.summer-try-again-btn:hover {
+  background: gold;
+}
+.summer-finish-link {
+  background: #00ffae;
+  color: #0e0e0e;
+}
+.summer-finish-link:hover {
+  background: gold;
+  color: white;
 }
 
 @media screen and (max-width: 1200px) {

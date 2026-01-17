@@ -390,18 +390,93 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// const quizWrapper = document.querySelector('.quiz-question-items');
+document.addEventListener('DOMContentLoaded', function () {
+  const ATabs = document.querySelectorAll('.benefit-season-tab');
+  const AContents = document.querySelectorAll('.benefit-season-cnt');
 
-// if (quizWrapper) {
-//   const aElements = quizWrapper.querySelectorAll('.quiz-question-item');
+  if (!ATabs.length || !AContents.length) return;
 
-//   aElements.forEach(item => {
-//     item.addEventListener('click', function() {
-//       aElements.forEach(el => el.classList.remove('active'));
-    
-//       this.classList.add('active');
-      
-//       console.log("Выбран ответ:", this.innerText);
-//     });
-//   });
-// }
+  const AStorageKey = 'activeBenefitSeasonTab';
+
+  function AShowContent(AId) {
+    AContents.forEach(function (cnt) {
+      if (cnt.dataset.id === AId) {
+        cnt.classList.add('active');
+      } else {
+        cnt.classList.remove('active');
+      }
+    });
+
+    ATabs.forEach(function (tab) {
+      if (tab.dataset.id === AId) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
+      }
+    });
+
+    localStorage.setItem(AStorageKey, AId);
+  }
+
+  const ASavedTab = localStorage.getItem(AStorageKey);
+
+  if (ASavedTab) {
+    AShowContent(ASavedTab);
+  } else {
+    AShowContent('quests'); 
+  }
+
+  ATabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      const AId = tab.dataset.id;
+      AShowContent(AId);
+    });
+  });
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const ATabs = document.querySelectorAll('.various-goods-tabs button');
+  const AContents = document.querySelectorAll('.cheats-products-cnt');
+
+  if (!ATabs.length || !AContents.length) return;
+
+  const AStorageKey = 'cheatsProductsTab';
+
+  function AShowContent(AId) {
+    AContents.forEach(function (cnt) {
+      if (cnt.dataset.id === AId) {
+        cnt.classList.add('active');
+      } else {
+        cnt.classList.remove('active');
+      }
+    });
+
+    ATabs.forEach(function (tab) {
+      if (tab.dataset.id === AId) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
+      }
+    });
+
+    localStorage.setItem(AStorageKey, AId);
+  }
+
+  const ASavedTab = localStorage.getItem(AStorageKey);
+
+  if (ASavedTab) {
+    AShowContent(ASavedTab);
+  } else {
+    AShowContent('various-goods'); 
+  }
+
+  ATabs.forEach(function (tab) {
+    tab.addEventListener('click', function () {
+      const AId = tab.dataset.id;
+      AShowContent(AId);
+    });
+  });
+});
