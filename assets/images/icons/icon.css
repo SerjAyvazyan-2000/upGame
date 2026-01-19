@@ -141,3 +141,35 @@
     mask-image: url(descending_sorting.svg);
   -webkit-mask-image: url(descending_sorting.svg);
 }
+.icon-users2{
+      mask-image: url(users2.svg);
+  -webkit-mask-image: url(users2.svg);
+}
+.icon-data{
+      mask-image: url(data.svg);
+  -webkit-mask-image: url(data.svg);
+}
+.icon-DTime{
+      mask-image: url(DTime.svg);
+  -webkit-mask-image: url(DTime.svg);
+}
+.icon-Ddata{
+      mask-image: url(Ddata.svg);
+  -webkit-mask-image: url(Ddata.svg);
+}
+.icon-gift{
+      mask-image: url(gift.svg);
+  -webkit-mask-image: url(gift.svg);
+}
+.icon-check2{
+      mask-image: url(check2.svg);
+  -webkit-mask-image: url(check2.svg);
+}
+.icon-prizes{
+      mask-image: url(prizes.svg);
+  -webkit-mask-image: url(prizes.svg);
+}
+.icon-winners{
+      mask-image: url(winners.svg);
+  -webkit-mask-image: url(winners.svg);
+}

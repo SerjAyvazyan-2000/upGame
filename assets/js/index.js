@@ -352,6 +352,69 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  const AModalWrapper = document.querySelector(".exchange-modal-wrapper");
+  const AOpenBtns = document.querySelectorAll(".open-exchange-modal");
+  const AModalBg = document.querySelector(".exchange-modal-bg");
+
+
+  if (!AModalWrapper) return;
+
+  AOpenBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      AModalWrapper.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (AModalBg) {
+    AModalBg.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+
+
+});
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const AModalWrapper = document.querySelector(".purchase-modal-wrapper");
+  const AOpenBtns = document.querySelectorAll(".open-purchase-modal");
+  const AModalBg = document.querySelector(".purchase-modal-bg");
+
+
+  if (!AModalWrapper) return;
+
+  AOpenBtns.forEach(function (btn) {
+    btn.addEventListener("click", function (e) {
+      e.preventDefault();
+      AModalWrapper.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
+  });
+
+  if (AModalBg) {
+    AModalBg.addEventListener("click", function () {
+      AModalWrapper.classList.remove("active");
+      document.body.style.overflow = "unset";
+    });
+  }
+
+
+});
+
+
+
+
+
+
+
+
+
+
 
 
 

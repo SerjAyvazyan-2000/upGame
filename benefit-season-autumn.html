@@ -73,8 +73,25 @@
                 >
                   ТОП рейтинг
                 </button>
-                <button class="benefit-season-tab autumn-benefit-tab">
+                <button
+                  data-id="draws"
+                  class="benefit-season-tab autumn-benefit-tab"
+                >
                   Розыгрыши
+                </button>
+
+                <button
+                  data-id="detailed-drawing"
+                  class="benefit-season-tab autumn-benefit-tab"
+                >
+                  Розыгрыши 1
+                </button>
+
+                <button
+                  data-id="another-giveaway"
+                  class="benefit-season-tab autumn-benefit-tab"
+                >
+                  Розыгрыши 2
                 </button>
               </div>
 
@@ -467,7 +484,7 @@
                         Макс. значение
                       </button>
                       <button
-                        class="benefit-sell-​​acorns-btn autumn-sell-​​acorns-btn"
+                        class="open-exchange-modal benefit-sell-​​acorns-btn autumn-sell-​​acorns-btn"
                       >
                         Продать желуди
                       </button>
@@ -528,7 +545,7 @@
                               <span>3 месяца</span>
                             </div>
                             <a
-                              class="v-goods-item-link autumn-goods-link"
+                              class="v-goods-item-link open-purchase-modal autumn-goods-link"
                               href="#"
                             >
                               <p>Купить</p>
@@ -564,7 +581,7 @@
                               <span>6 месяцев</span>
                             </div>
                             <a
-                              class="v-goods-item-link autumn-goods-link"
+                              class="v-goods-item-link open-purchase-modal autumn-goods-link"
                               href="#"
                             >
                               <p>Купить</p>
@@ -600,7 +617,7 @@
                               <span>1 месяц</span>
                             </div>
                             <a
-                              class="v-goods-item-link autumn-goods-link"
+                              class="open-purchase-modal v-goods-item-link autumn-goods-link"
                               href="#"
                             >
                               <p>Купить</p>
@@ -2089,10 +2106,836 @@
                   />
                 </div>
               </div>
+
+              <div data-id="draws" class="benefit-season-cnt draws-cnt-wrapper">
+                <div class="draws-cnt-description">
+                  <div class="draws-cnt-titles">
+                    <p>Розыгрыши</p>
+                    <span>Бесплатное участие для подписчиков канала</span>
+                  </div>
+                  <div class="draws-description-info">
+                    <div class="draws-description-icon">
+                      <img
+                        width="48"
+                        height="48"
+                        loading="eager"
+                        src="assets/images/giftIcon.webp"
+                        alt="photo"
+                      />
+                    </div>
+                    <div class="draws-description-titles">
+                      <p>
+                        Чтобы участвовать в розыгрыше, нужна подписка на
+                        Telegram-канал!
+                      </p>
+                      <span
+                        >Подписывайтесь на наш Telegram-канал для получения
+                        информации о текущих розыгрышах, а также на наш
+                        Discord-сервер для общения с другими участниками.</span
+                      >
+                      <a href="#">Перейти в Telegram</a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="active-drawing-items">
+                  <div class="d-prank-item">
+                    <div class="d-prank-item-clue">Активный розыгрыш</div>
+                    <div class="d-prank-item-titles">
+                      <p>Розыгрыш 10 подписок на Ancient Rust</p>
+                      <span
+                        >Участие в розыгрыше абсолютно бесплатное. Все что нужно
+                        — это подписка на наш Telegram-канал и немного удачи. Мы
+                        разыграем 10 месячных подписок среди всех участников.
+                        Розыгрыш пройдет честно и прозрачно. Все победители
+                        будут объявлены в нашем канале.</span
+                      >
+                    </div>
+                    <div class="d-prank-item-tools">
+                      <div class="d-prank-item-info">
+                        <div class="d-prank-item-users">
+                          <i class="icon icon-users2"></i>
+                          <p>1247 участников</p>
+                        </div>
+
+                        <div class="d-prank-item-users">
+                          <i class="icon icon-data"></i>
+                          <p>До 31 декабря</p>
+                        </div>
+                      </div>
+                      <div class="d-prank-item-links">
+                        <a class="prank-participate-link" href="#"
+                          >Участвовать в розыгрыше</a
+                        >
+                        <a href="#" class="prank-more-link">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="d-prank-item-img">
+                      <img
+                        width="1239"
+                        height="400"
+                        loading="lazy"
+                        src="assets/images/dPrankItemImg.webp"
+                        alt="photo"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="other-sweepstakes-block">
+                  <p class="other-sweepstakes-title">Другие розыгрыши</p>
+                  <div class="other-sweepstakes-items">
+                    <div class="d-prank-item">
+                      <div class="d-prank-item-titles">
+                        <p>Розыгрыш продуктов SMG</p>
+                        <span>
+                          Разыграем 5 месячных подписок на топовые читы для
+                          Counter-Strike 2. Присоединяйся к нам в Telegram и
+                          получи шанс выиграть!
+                        </span>
+                      </div>
+                      <div class="d-prank-item-tools">
+                        <div class="d-prank-item-info">
+                          <div class="d-prank-item-users">
+                            <i class="icon icon-users2"></i>
+                            <p>856 участников</p>
+                          </div>
+
+                          <div class="d-prank-item-users">
+                            <i class="icon icon-data"></i>
+                            <p>До 20 января</p>
+                          </div>
+                        </div>
+                        <div class="d-prank-item-links">
+                          <a class="prank-participate-link" href="#"
+                            >Участвовать в розыгрыше</a
+                          >
+                          <a href="#" class="prank-more-link">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="d-prank-item-img">
+                        <img
+                          width="1239"
+                          height="400"
+                          loading="lazy"
+                          src="assets/images/dPrankItemImg2.webp"
+                          alt="photo"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="d-prank-item">
+                      <div class="d-prank-item-clue">Еженедельно</div>
+
+                      <div class="d-prank-item-titles">
+                        <p>Fecurity Giveaway!</p>
+                        <span>
+                          Каждую неделю мы разыгрываем случайные читы среди
+                          подписчиков. Подпишись и следи за обновлениями!
+                        </span>
+                      </div>
+                      <div class="d-prank-item-tools">
+                        <div class="d-prank-item-info">
+                          <div class="d-prank-item-users">
+                            <i class="icon icon-users2"></i>
+                            <p>2341 участников</p>
+                          </div>
+
+                          <div class="d-prank-item-users">
+                            <i class="icon icon-data"></i>
+                            <p>Каждое воскресенье</p>
+                          </div>
+                        </div>
+                        <div class="d-prank-item-links">
+                          <a class="prank-participate-link" href="#"
+                            >Участвовать в розыгрыше</a
+                          >
+                          <a href="#" class="prank-more-link">Подробнее</a>
+                        </div>
+                      </div>
+                      <div class="d-prank-item-img">
+                        <img
+                          width="1239"
+                          height="400"
+                          loading="lazy"
+                          src="assets/images/dPrankItemImg3.webp"
+                          alt="photo"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-id="detailed-drawing"
+                class="benefit-season-cnt detailed-drawing"
+              >
+                <div class="detailed-drawing-cnt-wrapper">
+                  <div class="detailed-drawing-header">
+                    <p>Розыгрыш 10 подписок на Vengeance Rust</p>
+                    <div class="detailed-drawing-clue">Активный розыгрыш</div>
+                  </div>
+                  <p class="detailed-drawing-text">
+                    Участвуй в розыгрыше абсолютно бесплатно и выиграй доступ к
+                    лучшим читам для Rust!
+                  </p>
+
+                  <div class="detailed-drawing-columns">
+                    <div class="detailed-drawing-small-column">
+                      <div class="detailed-drawing-details">
+                        <div class="drawing-details-header">
+                          <i class="icon icon-DTime"></i>
+                          <p>Детали</p>
+                        </div>
+                        <div class="drawing-details-data-items">
+                          <div class="drawing-details-data-item">
+                            <p class="drawing-details-data-title">
+                              Дата начала
+                            </p>
+                            <div class="drawing-details-data">
+                              <i class="icon icon-Ddata"></i>
+                              <p>01.12.2025</p>
+                            </div>
+                          </div>
+
+                          <div class="drawing-details-data-item">
+                            <p class="drawing-details-data-title">
+                              Дата окончания
+                            </p>
+                            <div class="drawing-details-data">
+                              <i class="icon icon-Ddata"></i>
+                              <p>31.12.2025</p>
+                            </div>
+                          </div>
+
+                          <div class="drawing-details-data-item">
+                            <p class="drawing-details-data-title">Участников</p>
+                            <div class="drawing-details-data">
+                              <i class="icon icon-users2"></i>
+                              <p>1,247 человек</p>
+                            </div>
+                          </div>
+
+                          <div class="drawing-details-data-item">
+                            <p class="drawing-details-data-title">
+                              Победителей
+                            </p>
+                            <div class="drawing-details-data">
+                              <i class="icon icon-gift"></i>
+                              <p>10 человек</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="detailed-drawing-links">
+                        <a class="take-part-link" href="#">Принять участие</a>
+                        <a class="telegram-link" href="#">
+                          <div class="telegram-icon">
+                            <img
+                              width="20"
+                              height="20"
+                              loading="lazy"
+                              src="assets/images/telegramIcon.svg"
+                              alt="photo"
+                            />
+                          </div>
+                          <span>Telegram канал</span>
+                        </a>
+                        <a class="discord-link" href="#">
+                          <div class="discord-icon">
+                            <img
+                              width="20"
+                              height="20"
+                              loading="lazy"
+                              src="assets/images/DiscordIcon.svg"
+                              alt="photo"
+                            />
+                          </div>
+                          <span>Discord сервер</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="detailed-drawing-big-column">
+                      <div class="detailed-drawing-description">
+                        <p>О розыгрыше</p>
+                        <span
+                          >Привет! Мы запускаем крутой розыгрыш, в котором
+                          разыгрываем читы для Rust! Для участия достаточно лишь
+                          подписки на наш Telegram-канал и Discord-сервер.
+                          Победители будут выбраны случайным образом, и вы
+                          сможете проверить справедливость розыгрыша на этой
+                          странице.</span
+                        >
+                        <span
+                          >Розыгрыш продлится до 31 декабря 2025 года. Все
+                          победители будут объявлены в нашем Telegram-канале и
+                          на сайте. Удачи всем участникам!
+                        </span>
+                        <b>Следи за событиями!</b>
+                      </div>
+                      <div class="conditions-participation-block">
+                        <p class="conditions-participation-title">
+                          Условия участия
+                        </p>
+                        <div class="conditions-participation-items">
+                          <div class="conditions-participation-item">
+                            <div class="conditions-participation-icon">
+                              <i class="icon icon-check2"></i>
+                            </div>
+                            <p>Подписаться на наш Telegram-канал</p>
+                          </div>
+
+                          <div class="conditions-participation-item">
+                            <div class="conditions-participation-icon">
+                              <i class="icon icon-check2"></i>
+                            </div>
+                            <p>Подписаться на наш Discord-сервер</p>
+                          </div>
+                          <div class="conditions-participation-item">
+                            <div class="conditions-participation-icon">
+                              <i class="icon icon-check2"></i>
+                            </div>
+                            <p>Нажать кнопку "Принять участие"</p>
+                          </div>
+
+                          <div class="conditions-participation-item">
+                            <div class="conditions-participation-icon">
+                              <i class="icon icon-check2"></i>
+                            </div>
+                            <p>Дождаться окончания розыгрыша</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="detailed-drawing-prizes">
+                    <div class="drawing-prizes-title">
+                      <i class="icon icon-prizes"></i>
+                      <p>Призы</p>
+                    </div>
+                    <div class="drawing-prizes-items">
+                      <div class="drawing-prize-item">
+                        <div class="prize-item-titles">
+                          <p>Vengeance Rust FULL (1 Месяц)</p>
+                          <span>3 шт.</span>
+                        </div>
+                        <p class="prize-item-text">
+                          Полная версия чита с всеми функциями на 30 дней
+                        </p>
+                      </div>
+
+                      <div class="drawing-prize-item">
+                        <div class="prize-item-titles">
+                          <p>Vengeance Rust Lite (1 Месяц)</p>
+                          <span>4 шт.</span>
+                        </div>
+                        <p class="prize-item-text">
+                          Облегченная версия чита с основными функциями на 30
+                          дней
+                        </p>
+                      </div>
+
+                      <div class="drawing-prize-item">
+                        <div class="prize-item-titles">
+                          <p>Vengeance Rust FULL (7 Дней)</p>
+                          <span>3 шт.</span>
+                        </div>
+                        <p class="prize-item-text">
+                          Полная версия чита с всеми функциями на 7 дней
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="detailed-drawing-participants">
+                    <div class="drawing-participants-header">
+                      <div class="participants-header-title">
+                        <i class="icon icon-users2"></i>
+                        <p>Участники</p>
+                      </div>
+                      <p class="participants-header-text">
+                        Всего участников: 14
+                      </p>
+                    </div>
+
+                    <div class="participants-table-wrapper">
+                      <div class="drawing-participants-table">
+                        <div class="participants-table-header">
+                          <p class="participants-email-title">E-mail</p>
+                          <p class="participants-tickets-title">Билеты</p>
+                          <p class="participants-participation-title">
+                            Дата участия
+                          </p>
+                        </div>
+                        <div class="participants-table-item">
+                          <p class="participants-email">va***31@bk.ru</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            01.12.2025 19:58
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">te***ha@inbox.ru</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            01.12.2025 20:20
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">ev***76@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            02.12.2025 08:15
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">ma***ke@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            02.12.2025 10:40
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">po***ra@mail.ru</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            03.12.2025 07:13
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">in***f9@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            03.12.2025 11:25
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">gr***e2@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            04.12.2025 12:08
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">gh***03@mail.ru</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            04.12.2025 17:39
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">va***sa@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            05.12.2025 09:47
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">as***ik@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            05.12.2025 13:54
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">us***gm@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            06.12.2025 19:01
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">te***ha@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            07.12.2025 14:22
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">sk***66@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            08.12.2025 09:35
+                          </p>
+                        </div>
+
+                        <div class="participants-table-item">
+                          <p class="participants-email">ma***cs@gmail.com</p>
+                          <p class="participants-tickets">1</p>
+                          <p class="participants-participation-date">
+                            09.12.2025 16:47
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                data-id="another-giveaway"
+                class="benefit-season-cnt another-giveaway-block"
+              >
+                <div class="draws-banner-block">
+                  <div class="draws-banner-img">
+                    <img
+                      width="1239"
+                      height="300"
+                      loading="lazy"
+                      src="assets/images/draws-banner.webp"
+                      alt="photo"
+                    />
+                  </div>
+                  <p class="draws-banner-title">
+                    Розыгрыш 10 подписок на Pussy Cat Rust
+                  </p>
+                </div>
+
+                <div class="another-giveaway-columns">
+                  <div class="another-giveaway-details">
+                    <div class="drawing-details-header">
+                      <p>Детали</p>
+                    </div>
+                    <div class="drawing-details-data-items">
+                      <div class="drawing-details-data-item">
+                        <p class="drawing-details-data-title">Дата начала</p>
+                        <div class="drawing-details-data">
+                          <i class="icon icon-Ddata"></i>
+                          <p>01.12.2025</p>
+                        </div>
+                      </div>
+
+                      <div class="drawing-details-data-item">
+                        <p class="drawing-details-data-title">Дата окончания</p>
+                        <div class="drawing-details-data">
+                          <i class="icon icon-Ddata"></i>
+                          <p>01.12.2025</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="another-giveaway-description">
+                    <p>
+                      Всем привет! Запускаем новый конкурс на нашем сайте —
+                      разыгрываем доступы на случайную игру! Для участия нужно
+                      всего лишь подписаться на наш Telegram-канал. Итоги
+                      розыгрыша будут опубликованы на этой странице. Не упусти
+                      шанс — призы получат 10 победителей на случайные товары.
+                    </p>
+                    <a class="giveaway-finish-link" href="#">
+                      Розыгрыш завершён
+                    </a>
+                  </div>
+                </div>
+
+                <div class="draws-winners-block">
+                  <div class="draws-winners-title">
+                    <i class="icon icon-winners"></i>
+                    <p>Победители</p>
+                  </div>
+
+                  <div class="draws-winners-items">
+                    <div class="draws-winners-item">
+                      <p>ic***14@inbox.ru</p>
+                      <span>Выигрыш: Rust • 01.12.2025 22:49</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>va***99@gmail.com</p>
+                      <span>Выигрыш: Rust • 02.12.2025 18:23</span>
+                    </div>
+
+                    <div class="draws-winners-item">
+                      <p>po***ar@gmail.ru</p>
+                      <span>Выигрыш: Rust • 03.12.2025 14:15</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>gh***02@mail.ru</p>
+                      <span>Выигрыш: Rust • 04.12.2025 09:37</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>as***ki@gmail.com</p>
+                      <span>Выигрыш: Rust • 05.12.2025 20:11</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>in***ar@gmail.com</p>
+                      <span>Выигрыш: Rust • 06.12.2025 16:42</span>
+                    </div>
+
+                    <div class="draws-winners-item">
+                      <p>us***gm@gmail.com</p>
+                      <span>Выигрыш: Rust • 07.12.2025 11:58</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>va***bk.ru</p>
+                      <span>Выигрыш: Rust • 08.12.2025 08:24</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>sk***66@gmail.com</p>
+                      <span>Выигрыш: Rust • 09.12.2025 19:05</span>
+                    </div>
+                    <div class="draws-winners-item">
+                      <p>ma***cs@gmail.com</p>
+                      <span>Выигрыш: Rust • 10.12.2025 13:33</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detailed-drawing-prizes">
+                  <div class="drawing-prizes-title">
+                    <i class="icon icon-prizes"></i>
+                    <p>Призы</p>
+                  </div>
+                  <div class="drawing-prizes-items">
+                    <div class="drawing-prize-item">
+                      <div class="prize-item-titles">
+                        <p>Vengeance Rust FULL (1 День)</p>
+                        <span>3 штуки</span>
+                      </div>
+                    </div>
+
+                    <div class="drawing-prize-item">
+                      <div class="prize-item-titles">
+                        <p>Vengeance Rust Lite (1 День)</p>
+                        <span>4 штуки</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="detailed-drawing-participants">
+                  <div class="drawing-participants-header">
+                    <div class="participants-header-title">
+                      <i class="icon icon-users2"></i>
+                      <p>Участники</p>
+                    </div>
+                    <p class="participants-header-text">Всего участников: 14</p>
+                  </div>
+
+                  <div class="participants-table-wrapper">
+                    <div class="drawing-participants-table">
+                      <div class="participants-table-header">
+                        <p class="participants-email-title">E-mail</p>
+                        <p class="participants-tickets-title">Билеты</p>
+                        <p class="participants-participation-title">
+                          Дата участия
+                        </p>
+                      </div>
+                      <div class="participants-table-item">
+                        <p class="participants-email">va***31@bk.ru</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          01.12.2025 19:58
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">te***ha@inbox.ru</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          01.12.2025 20:20
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">ev***76@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          02.12.2025 08:15
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">ma***ke@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          02.12.2025 10:40
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">po***ra@mail.ru</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          03.12.2025 07:13
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">in***f9@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          03.12.2025 11:25
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">gr***e2@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          04.12.2025 12:08
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">gh***03@mail.ru</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          04.12.2025 17:39
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">va***sa@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          05.12.2025 09:47
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">as***ik@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          05.12.2025 13:54
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">us***gm@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          06.12.2025 19:01
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">te***ha@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          07.12.2025 14:22
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">sk***66@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          08.12.2025 09:35
+                        </p>
+                      </div>
+
+                      <div class="participants-table-item">
+                        <p class="participants-email">ma***cs@gmail.com</p>
+                        <p class="participants-tickets">1</p>
+                        <p class="participants-participation-date">
+                          09.12.2025 16:47
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
+      <div class="exchange-modal-wrapper">
+        <div class="exchange-modal-bg"></div>
+        <div class="exchange-modal-cnt">
+          <div class="exchange-modal-title">Вы уверены, что хотите:</div>
+          <div class="exchange-currency-modal-cnt">
+            <p class="exchange-modal-cnt-title autumn-modal-cnt-title">
+              Обменять валюту
+            </p>
+            <div class="exchange-modal-items">
+              <div class="exchange-modal-item">
+                <p>18000</p>
+                <img
+                  width="35"
+                  height="36"
+                  loading="lazy"
+                  src="assets/images/givingIcon.webp"
+                  alt="photo"
+                />
+              </div>
+              <p class="exchange-modal-separator">на</p>
+              <div class="exchange-modal-item">
+                <p>1440</p>
+                <img
+                  width="27"
+                  height="41"
+                  loading="lazy"
+                  src="assets/images/givingIcon2.webp"
+                  alt="photo"
+                />
+              </div>
+            </div>
+
+            <div class="exchange-modal-links">
+              <a class="exchange-cancel-link" href="#">Отменить</a>
+              <a
+                class="exchange-confirm-link autumn-exchange-confirm-link"
+                href="#"
+                >Подтвердить</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="purchase-modal-wrapper">
+        <div class="purchase-modal-bg"></div>
+        <div class="purchase-modal-cnt">
+          <div class="purchase-modal-title">Вы уверены, что хотите:</div>
+          <div class="purchase-modal-main">
+            <p class="purchase-modal-cnt-title autumn-modal-cnt-title">
+              Приобрести товар
+            </p>
+            <!-- Тут можно менять класс и написать вместо  blue-modal-product напирмер green-modal-product и цвет будет меняться  -->
+            <div class="purchase-modal-product blue-modal-product">
+              <div class="modal-product-texts">
+                <p>Telegram Premium</p>
+                <span>6 месяцев</span>
+              </div>
+              <div class="modal-product-price autumn-modal-product-price">
+                <p>18000</p>
+                <img
+                  width="21"
+                  height="22"
+                  loading="lazy"
+                  src="assets/images/benefitBalanceIcon.webp"
+                  alt="photo"
+                />
+              </div>
+            </div>
+
+            <div class="purchase-modal-links">
+              <a class="purchase-cancel-link" href="#">Отменить</a>
+              <a
+                class="purchase-confirm-link autumn-purchase-confirm-link"
+                href="#"
+                >Подтвердить</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script src="assets/js/index.js"></script>
