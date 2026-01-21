@@ -3289,6 +3289,9 @@ box-shadow: 0px 4px 20px 4px #A237FF;
   .top-rating-red-item .top-rating-item-img {
     max-width: 173px;
   }
+    .top-rating-aqua-item .top-rating-item-img {
+    max-width: 173px;
+  }
   .users-earned-info p {
     font-size: 16px;
   }
