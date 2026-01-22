@@ -1222,17 +1222,36 @@
   max-width: 273px;
   width: 100%;
 }
-.top-rating-red-item .top-rating-item-blur {
-  background: #e95002;
-}
-.top-rating-aqua-item .top-rating-item-blur {
-  background: #2F9EF9;
 
+.top-rating-aqua-item .top-rating-item-blur {
+  background: #2f9ef9;
 }
+
 .top-rating-aqua-item .top-rating-item-img {
   max-width: 273px;
   width: 100%;
 }
+
+.top-rating-red-item .top-rating-item-blur {
+  background: #fd3a71;
+}
+.top-rating-red-item .top-rating-item-img {
+  max-width: 273px;
+  width: 100%;
+}
+
+
+.top-rating-green-item .top-rating-item-blur {
+  background: #00FFAE;
+
+}
+.top-rating-green-item .top-rating-item-img {
+  max-width: 273px;
+  width: 100%;
+}
+
+
+
 .users-earned-block {
   position: relative;
   z-index: 2;
@@ -2408,7 +2427,6 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 23.04px;
-  color: #e95002;
 }
 .modal-product-price img {
   display: flex;
@@ -2642,6 +2660,9 @@
   );
   border: 1px solid #e95002;
 }
+.autumn-modal-product-price p {
+  color: #e95002;
+}
 
 /* ============== ЗИМА =========*/
 
@@ -2674,7 +2695,6 @@
 .winter-benefit-tab.active {
   color: #2f9ef9;
 }
-
 .winter-quest-link {
   border: 1px solid #ffffffb2;
 }
@@ -2708,6 +2728,7 @@
 .winter-active-quest-item .active-quest-link span {
   color: #ffffff66;
 }
+
 .winter-benefit-media {
   right: -350px;
   bottom: -146px;
@@ -2797,38 +2818,428 @@
   background:
     linear-gradient(0deg, #1c1c1c, #1c1c1c),
     radial-gradient(
-        89.33% 312.5% at 34.68% 287.5%,
-        rgba(47, 158, 249, 0.2) 0%,
-        rgba(47, 158, 249, 0) 100%
-      )
-      ;
-border: 1px solid #2F9EF9;
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(47, 158, 249, 0.2) 0%,
+      rgba(47, 158, 249, 0) 100%
+    );
+  border: 1px solid #2f9ef9;
   transition: 0.3s;
 }
 .winter-goods-link p {
-  color: #2F9EF9;
-
+  color: #2f9ef9;
 }
 .winter-goods-link:hover {
-  background:  #2F9EF9;
+  background: #2f9ef9;
 }
 .winter-goods-link:hover p {
   color: white;
 }
-.winter-goods-link:hover .v-goods-link-icon{
- mix-blend-mode: color-dodge;
+.winter-goods-link:hover .v-goods-link-icon {
+  mix-blend-mode: color-dodge;
 }
-
 .winter-aqua-product-item::after {
-  background: #20E5CE;
-  box-shadow: 0px 4px 20px 4px #20E5CE;
-
+  background: #20e5ce;
+  box-shadow: 0px 4px 20px 4px #20e5ce;
 }
 .winter-blueviolet-product-item::after {
- background: #A237FF;
-box-shadow: 0px 4px 20px 4px #A237FF;
+  background: #a237ff;
+  box-shadow: 0px 4px 20px 4px #a237ff;
+}
+.winter-modal-cnt-title {
+  color: #2f9ef9;
+}
+.winter-exchange-confirm-link {
+  color: #2f9ef9;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+
+  border: 1px solid #2f9ef9;
+}
+.winter-modal-product-price {
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+  border: 1px solid #2f9ef9;
+}
+.winter-modal-product-price p {
+  color: #2f9ef9;
+}
+.winter-purchase-confirm-link {
+  color: #2f9ef9;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+  border: 1px solid #2f9ef9;
+}
+
+/* ============== ВЕСНА =========*/
+
+.spring-benefit-banner-img {
+  max-width: 316px;
+  width: 100%;
+  left: 107px;
+  bottom: 0;
+}
+.spring-benefit-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.spring-benefit-tab::after {
+  background: #fd3a71;
+  box-shadow: 0px 0px 30px 0px #fd3a71;
+}
+.spring-benefit-tab:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.spring-benefit-tab:hover {
+  color: #fd3a71;
+}
+.spring-benefit-tab.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+.spring-benefit-tab.active {
+  color: #fd3a71;
+}
+.spring-active-quest-item:hover::after {
+  background: #f6cddd;
+}
+.spring-active-quest-item.active::after {
+  background: #f6cddd;
+}
+.spring-active-quest-item:hover .active-quest-link {
+  border: 1px solid #fd3a71;
+}
+.spring-active-quest-item:hover .active-quest-link p {
+  color: #fd3a71;
+}
+.spring-active-quest-item:hover .active-quest-link span {
+  color: #fd3a71;
+}
+.spring-active-quest-item.active .active-quest-link {
+  border: 1px solid #fd3a71;
+}
+.spring-active-quest-item.active .active-quest-link p {
+  color: #fd3a71;
+}
+.spring-active-quest-item.active .active-quest-link span {
+  color: #fd3a71;
+}
+.spring-active-quest-item .active-quest-link p {
+  color: #ffffff;
+}
+.spring-active-quest-item .active-quest-link span {
+  color: #ffffff66;
+}
+.spring-quest-link {
+  border: 1px solid #ffffffb2;
+}
+.spring-benefit-media {
+  right: -350px;
+  bottom: -16px;
+}
+
+.p-spring-border-link {
+  border: 1px solid #fd3a71;
+  background:
+    linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    radial-gradient(
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(253, 58, 113, 0.2) 0%,
+      rgba(253, 58, 113, 0) 100%
+    );
+  transition: 0.3s;
+}
+.p-spring-border-link p {
+  color: #fd3a71;
+}
+.p-spring-border-link .p-week-link-count span {
+  color: #fd3a71;
+}
+.p-spring-border-link:hover p {
+  color: #ffffff;
+}
+.p-spring-border-link:hover span {
+  color: #ffffff;
+}
+.p-spring-border-link:hover {
+  background: #fd3a71;
+}
+.p-spring-border-link:hover .product-week-icon {
+  mix-blend-mode: color-dodge;
+}
+.spring-item-blur--one {
+  background: #f6cddd;
+}
+.spring-item-blur--two {
+  background: #fd3a71;
+}
+.spring-week-info-tag {
+  background: #1c1c1c;
+  color: #ffffff80;
+}
+.spring-week-info-tag.active {
+  background: #fd3a71;
+  color: #ffffff;
+}
+.spring-week-info-tag:hover {
+  background: #fd3a71;
+  color: #ffffff;
+}
+.spring-exchanger-giving {
+  background: radial-gradient(
+    121.54% 67% at 27.67% 113.33%,
+    rgba(253, 58, 113, 0.2) 0%,
+    rgba(253, 58, 113, 0) 100%
+  );
+}
+.spring-exchanger-separator i {
+  background: #f6cddd;
+}
+.spring-benefit-exchanger-receive {
+  background:
+    radial-gradient(
+      41.39% 109.49% at 85.95% 126.58%,
+      rgba(19, 122, 190, 0.2) 0%,
+      rgba(19, 122, 190, 0) 100%
+    ),
+    linear-gradient(0deg, #1c1c1c, #1c1c1c);
+}
+.spring-max-value-btn {
+  background: radial-gradient(
+    121.54% 67% at 27.67% 113.33%,
+    rgba(253, 58, 113, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+  color: #ffffff;
+}
+.spring-sell-​​acorns-btn {
+  color: #fd3a71;
+  background: #1c1c1c;
+}
+.spring-sell-​​acorns-btn:hover {
+  background: #fd3a71;
+  color: #ffffff;
+}
+.spring-goods-item-icon {
+  background: linear-gradient(180deg, rgba(253, 58, 113, 0) 44%, #fd3a71 91.5%);
+}
+.spring-white-product-item::after {
+  background: #ffffff;
+  box-shadow: 0px 4px 20px 4px #ffffff;
+}
+.spring-goods-link {
+  background:
+    linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    radial-gradient(
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(253, 58, 113, 0.2) 0%,
+      rgba(253, 58, 113, 0) 100%
+    );
+  border: 1px solid #fd3a71;
+  transition: 0.3s;
+}
+.spring-goods-link p {
+  color: #fd3a71;
+}
+.spring-goods-link:hover {
+  background: #fd3a71;
+}
+.spring-goods-link:hover p {
+  color: white;
+}
+.spring-goods-link:hover .v-goods-link-icon {
+  mix-blend-mode: color-dodge;
+}
+
+.spring-red-product-item::after {
+  background: #fd3a71;
+  box-shadow: 0px 4px 20px 4px #fd3a71;
+}
+
+/* ============== ЛЕТО =========*/
+
+.summer-benefit-banner-img {
+  max-width: 422px;
+  width: 100%;
+  left: 66px;
+  bottom: 0;
+}
+.summer-benefit-banner-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.summer-benefit-tab::after {
+  background: #00ff6a;
+  box-shadow: 0px 0px 30px 0px #00ff6a;
+}
+.summer-benefit-tab:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+.summer-benefit-tab:hover {
+  color: #00ff6a;
+}
+.summer-benefit-tab.active::after {
+  opacity: 1;
+  visibility: visible;
+}
+.summer-benefit-tab.active {
+  color: #00ff6a;
+}
+.summer-active-quest-item:hover::after {
+  background: #49a8ba;
+}
+.summer-active-quest-item.active::after {
+  background: #49a8ba;
+}
+.summer-active-quest-item:hover .active-quest-link {
+  border: 1px solid #00ff6a;
+}
+.summer-active-quest-item:hover .active-quest-link p {
+  color: #00ff6a;
+}
+.summer-active-quest-item:hover .active-quest-link span {
+  color: #00ff6a;
+}
+.summer-active-quest-item.active .active-quest-link {
+  border: 1px solid #00ff6a;
+}
+.summer-active-quest-item.active .active-quest-link p {
+  color: #00ff6a;
+}
+.summer-active-quest-item.active .active-quest-link span {
+  color: #00ff6a;
+}
+.summer-active-quest-item .active-quest-link p {
+  color: #ffffff;
+}
+.summer-active-quest-item .active-quest-link span {
+  color: #ffffff66;
+}
+.summer-benefit-media {
+  right: -350px;
+  bottom: -16px;
+}
+.summer-item-blur--one {
+  background: #49a8ba;
+}
+.summer-item-blur--two {
+  background: #00ffae;
+}
+.summer-week-info-tag {
+  background: #1c1c1c;
+
+  color: #ffffff80;
+}
+.summer-week-info-tag.active {
+  background: #00ffae;
+  color: #0e0e0e;
+}
+.p-summer-border-link {
+  border: 1px solid #00ffae;
+  background:
+    linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    radial-gradient(
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(0, 255, 174, 0.2) 0%,
+      rgba(0, 255, 174, 0) 100%
+    );
+  transition: 0.3s;
+}
+.p-summer-border-link p {
+  color: #00ffae;
+}
+.p-summer-border-link .p-week-link-count span {
+  color: #00ffae;
+}
+.p-summer-border-link:hover p {
+  color: #0e0e0e;
+}
+.p-summer-border-link:hover span {
+  color: #0e0e0e;
+}
+.p-summer-border-link:hover {
+  background: #00ffae;
+}
+.summer-max-value-btn {
+  background: radial-gradient(
+    121.54% 67% at 27.67% 113.33%,
+    rgba(0, 255, 174, 0.2) 0%,
+    rgba(0, 255, 174, 0) 100%
+  );
+
+  color: #ffffff;
+}
+.summer-exchanger-giving {
+  background:
+    radial-gradient(
+      121.54% 67% at 27.67% 113.33%,
+      rgba(0, 255, 174, 0.2) 0%,
+      rgba(0, 255, 174, 0) 100%
+    ),
+    linear-gradient(0deg, #1c1c1c, #1c1c1c);
+}
+.summer-benefit-exchanger-receive {
+  background:
+    radial-gradient(
+      41.39% 109.49% at 85.95% 126.58%,
+      rgba(19, 122, 190, 0.2) 0%,
+      rgba(19, 122, 190, 0) 100%
+    ),
+    linear-gradient(0deg, #1c1c1c, #1c1c1c);
+}
+.summer-sell-​​acorns-btn {
+  color: #00ffae;
+  background: #1c1c1c;
+}
+.summer-sell-​​acorns-btn:hover {
+  background: #00ffae;
+  color: black;
+}
+.summer-goods-item-icon {
+  background: linear-gradient(180deg, rgba(0, 255, 174, 0) 44%, #00ffae 91.5%);
+}
+.summer-goods-link {
+  background:
+    linear-gradient(0deg, #1c1c1c, #1c1c1c),
+    radial-gradient(
+        89.33% 312.5% at 34.68% 287.5%,
+        rgba(0, 255, 174, 0.2) 0%,
+        rgba(0, 255, 174, 0) 100%
+      )
+  ;
+  border: 1px solid #00FFAE;
+  transition: 0.3s;
+}
+.summer-goods-link p {
+  color: #00FFAE;
 
 }
+.summer-goods-link:hover {
+background: #00FFAE;
+
+}
+.summer-goods-link:hover p {
+  color: white;
+}
+.summer-blue-product-item::after {
+  background: #3A9FFD;
+ box-shadow: 0px 4px 20px 4px #3A9FFD;
+
+}
+
+
 
 @media screen and (max-width: 1200px) {
   .benefit-exchange-info {
@@ -2876,6 +3287,12 @@ box-shadow: 0px 4px 20px 4px #A237FF;
     left: 0;
   }
   .winter-benefit-banner-img {
+    left: 0;
+  }
+  .spring-benefit-banner-img {
+    left: 0;
+  }
+  .summer-benefit-banner-img {
     left: 0;
   }
   .benefit-season-tab::after {
@@ -3289,7 +3706,7 @@ box-shadow: 0px 4px 20px 4px #A237FF;
   .top-rating-red-item .top-rating-item-img {
     max-width: 173px;
   }
-    .top-rating-aqua-item .top-rating-item-img {
+  .top-rating-aqua-item .top-rating-item-img {
     max-width: 173px;
   }
   .users-earned-info p {
