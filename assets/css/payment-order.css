@@ -321,7 +321,8 @@
   position: absolute;
   left: 0;
   top: 0;
-  background: linear-gradient(
+  background:
+    linear-gradient(
       90deg,
       rgba(255, 255, 255, 0.03) 0%,
       rgba(153, 153, 153, 0.03) 100%
@@ -674,6 +675,216 @@
 .payment-auth-wrapper a:hover {
   opacity: 0.7;
 }
+.replenishment-amount-column {
+  margin-top: 55px;
+}
+.balance-replenishment-close {
+  position: absolute;
+  top: 43px;
+  right: 43px;
+}
+.balance-replenishment-close i {
+  background: #ffffff99;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.balance-replenishment-close i:hover {
+  background: white;
+}
+.replenishment-amount-block {
+  padding: 20px 30px;
+  background: #0e101c;
+  border-radius: 10px;
+  border: 1px solid #ffffff33;
+  position: relative;
+  z-index: 2;
+}
+.replenishment-amount-img {
+  position: absolute;
+  max-width: 150px;
+  width: 100%;
+  right: 19px;
+  bottom: 0;
+  display: flex;
+}
+.replenishment-amount-img img {
+  width: 100%;
+  height: 100%;
+}
+.replenishment-amount-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: #ffffff66;
+}
+.replenishment-amount-info {
+  max-width: 365px;
+  width: 100%;
+  position: relative;
+  z-index: 3;
+}
+.replenishment-input-wrapper {
+  max-width: 365px;
+  width: 100%;
+  border: 1px solid #ffffff33;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.replenishment-input-wrapper label {
+  width: 100%;
+  height: 59px;
+  position: relative;
+  z-index: 2;
+}
+.replenishment-input-wrapper label i {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  font-size: 20px;
+  background: #ffffff66;
+}
+.replenishment-input-wrapper label input {
+  padding: 18px 18px 18px 45px;
+  background: #0a0c17;
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: white;
+  border-radius: 5px;
+}
+.replenishment-currency-block {
+  max-width: 60px;
+  width: 100%;
+  background: #0e101c;
+  border-left: 1px solid #ffffff33;
+  position: relative;
+  z-index: 2;
+  border-radius: 0 5px 5px 0;
+}
+.replenishment-currency-block.active .replenishment-currency-options {
+  opacity: 1;
+  visibility: visible;
+  top: 70px;
+}
+.replenishment-currency-select {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  justify-content: center;
+  height: 60px;
+  width: 100%;
+  cursor: pointer;
+}
+.replenishment-currency-select p {
+  color: #ffffff;
+  font-size: 22px;
+}
+.replenishment-currency-select i {
+  font-size: 8px;
+  background: #ffffff;
+}
+.replenishment-currency-options {
+  position: absolute;
+  left: 0;
+  top: 65px;
+  background: #0e101c;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.r-currency-option {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.04px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.amount-money-items {
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 13px;
+}
+.amount-money-item {
+  cursor: pointer;
+  background: #10121e;
+  padding: 8px 15px;
+  border: 1px solid #ffffff33;
+  border-radius: 5px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23.04px;
+  color: #ffffff99;
+}
+.replenishment-promoCode-input {
+  margin-top: 30px;
+}
+.replenishment-total-paid-wrapper {
+  margin-top: 25px;
+}
+.total-paid-price {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.total-paid-price p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23.04px;
+  color: #ffffff;
+}
+.promo-code-block {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.promo-code-block span {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 23.04px;
+  color: #ffffff66;
+}
+.promo-code-sum {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23.04px;
+  color: #ffffffb2;
+}
+
+.r-proceed-payment-link {
+  margin-top: 25px;
+  padding: 14.5px;
+  background: radial-gradient(
+    70.01% 728.48% at 45.08% 77.53%,
+    rgba(221, 18, 61, 0.5) 0%,
+    rgba(14, 16, 28, 0.5) 100%
+  );
+  border: 1px solid #ffffff33;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  transition: 0.3s;
+}
+.r-proceed-payment-link:hover {
+  opacity: 0.7;
+}
 
 @media screen and (max-width: 1450px) {
   .payment-method-items {
@@ -695,6 +906,9 @@
   .payment-modal-main {
     flex-direction: column-reverse;
   }
+  .replenishment-modal-main {
+    flex-direction: column;
+  }
   .payment-left-column {
     max-width: 100%;
   }
@@ -703,6 +917,9 @@
   }
   .payment-auth-wrapper a {
     padding: 14.5px 27px;
+  }
+  .replenishment-amount-column {
+    margin-top: 0;
   }
 }
 
@@ -803,6 +1020,9 @@
   .payment-auth-wrapper {
     flex-direction: column;
   }
+  .payment-method-item{
+    flex: 1 1 40%;
+  }
   .payment-auth-wrapper a {
     width: 100%;
     font-size: 16px;
@@ -836,9 +1056,41 @@
     line-height: 21px;
   }
   .payment-instructions {
-    padding: 10px ;
+    padding: 10px;
     font-size: 16px;
     line-height: 21px;
+  }
 
+  .total-paid-price p {
+    font-size: 20px;
+    line-height: 21px;
+  }
+  .replenishment-amount-img {
+    display: none;
+  }
+  .amount-money-items {
+    flex-wrap: wrap;
+  }
+  .replenishment-amount-block {
+    padding: 15px 20px;
+    border-radius: 7px;
+  }
+
+  .replenishment-promoCode-input {
+    margin-top: 15px;
+  }
+  .r-proceed-payment-link {
+    font-size: 16px;
+  }
+  .balance-replenishment-close {
+    top: 20px;
+    right: 20px;
+  }
 }
+
+
+@media screen and (max-width: 420px) {
+   .payment-method-item{
+    flex: 1 1 60%;
+  }
 }

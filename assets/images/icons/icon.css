@@ -173,3 +173,23 @@
       mask-image: url(winners.svg);
   -webkit-mask-image: url(winners.svg);
 }
+.icon-error{
+      mask-image: url(error.svg);
+  -webkit-mask-image: url(error.svg);
+}
+.icon-checked{
+        mask-image: url(checked.svg);
+  -webkit-mask-image: url(checked.svg);
+}
+.icon-attention{
+        mask-image: url(attention.svg);
+  -webkit-mask-image: url(attention.svg);
+}
+.icon-rArrowDown{
+        mask-image: url(rArrowDown.svg);
+  -webkit-mask-image: url(rArrowDown.svg);
+}
+.icon-wallet{
+          mask-image: url(wallet.svg);
+  -webkit-mask-image: url(wallet.svg);
+}

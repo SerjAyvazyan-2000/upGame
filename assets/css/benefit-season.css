@@ -1240,17 +1240,13 @@
   width: 100%;
 }
 
-
 .top-rating-green-item .top-rating-item-blur {
-  background: #00FFAE;
-
+  background: #00ffae;
 }
 .top-rating-green-item .top-rating-item-img {
   max-width: 273px;
   width: 100%;
 }
-
-
 
 .users-earned-block {
   position: relative;
@@ -2433,6 +2429,50 @@
   object-fit: cover;
 }
 
+.insufficient-funds-popUp i {
+  background: #d34145;
+}
+.insufficient-funds-popUp p {
+  color: #d34145;
+}
+
+.successful-popUp i {
+  background: #5fc24f;
+}
+.successful-popUp p {
+  color: #5fc24f;
+}
+
+.attention-popUp i {
+  background: #ffc700;
+}
+.attention-popUp p {
+  color: #ffc700;
+}
+
+.status-popUp-wrapper {
+  position: fixed;
+  top: 125px;
+  right: 137px;
+  max-width: max-content;
+  padding: 25px 32px;
+  background: #111111;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #222222;
+  z-index: 10;
+  border-radius: 10px;
+}
+.status-popUp-wrapper p {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 146%;
+}
+.status-popUp-wrapper i {
+  font-size: 32px;
+}
+
 /* ============== ОСЕНЬ =========*/
 
 .autumn-benefit-banner-img {
@@ -3066,6 +3106,31 @@
   box-shadow: 0px 4px 20px 4px #fd3a71;
 }
 
+.spring-modal-cnt-title {
+  color: #FD3A71;
+
+}
+.spring-exchange-confirm-link {
+  color: #FD3A71;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+
+  border: 1px solid #FD3A71;
+}
+.spring-purchase-confirm-link {
+  color: #FD3A71;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
+
+  border: 1px solid #FD3A71;
+}
+
 /* ============== ЛЕТО =========*/
 
 .summer-benefit-banner-img {
@@ -3214,32 +3279,50 @@
   background:
     linear-gradient(0deg, #1c1c1c, #1c1c1c),
     radial-gradient(
-        89.33% 312.5% at 34.68% 287.5%,
-        rgba(0, 255, 174, 0.2) 0%,
-        rgba(0, 255, 174, 0) 100%
-      )
-  ;
-  border: 1px solid #00FFAE;
+      89.33% 312.5% at 34.68% 287.5%,
+      rgba(0, 255, 174, 0.2) 0%,
+      rgba(0, 255, 174, 0) 100%
+    );
+  border: 1px solid #00ffae;
   transition: 0.3s;
 }
 .summer-goods-link p {
-  color: #00FFAE;
-
+  color: #00ffae;
 }
 .summer-goods-link:hover {
-background: #00FFAE;
-
+  background: #00ffae;
 }
 .summer-goods-link:hover p {
   color: white;
 }
 .summer-blue-product-item::after {
-  background: #3A9FFD;
- box-shadow: 0px 4px 20px 4px #3A9FFD;
+  background: #3a9ffd;
+  box-shadow: 0px 4px 20px 4px #3a9ffd;
+}
+.summer-modal-cnt-title {
+  color: #00FFAE;
 
 }
+.summer-exchange-confirm-link {
+  color: #00FFAE;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
 
+  border: 1px solid  #00FFAE;
+}
+.summer-purchase-confirm-link {
+  color: #00FFAE;
+  background: radial-gradient(
+    89.33% 312.5% at 34.68% 287.5%,
+    rgba(47, 158, 249, 0.2) 0%,
+    rgba(47, 158, 249, 0) 100%
+  );
 
+  border: 1px solid  #00FFAE;
+}
 
 @media screen and (max-width: 1200px) {
   .benefit-exchange-info {
@@ -3273,6 +3356,12 @@ background: #00FFAE;
   }
   .rules-text-item ul li {
     font-size: 22px;
+  }
+
+  .status-popUp-wrapper {
+    position: fixed;
+    top: 20px;
+    right: 20px;
   }
 }
 
@@ -4151,6 +4240,19 @@ background: #00FFAE;
 
   .modal-product-price {
     padding: 10px 20px;
+  }
+
+  .status-popUp-wrapper {
+    padding: 15px 22px;
+    gap: 14px;
+    border-radius: 7px;
+  }
+  .status-popUp-wrapper p {
+    font-size: 18px;
+    line-height: 126%;
+  }
+  .status-popUp-wrapper i {
+    font-size: 20px;
   }
 }
 

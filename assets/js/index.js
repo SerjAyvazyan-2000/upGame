@@ -424,7 +424,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const AOpenBtns = document.querySelectorAll(".open-payment-modal");
   const AModalBg = document.querySelector(".payment-modal-bg ");
   const ACloseIcon = document.querySelector(
-    ".ticket-modal-close"
+    ".ticket-modal-close ,.payment-modal-close"
   );
 
   if (!AModalWrapper) return;
@@ -543,3 +543,57 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const RCurrencyBlock = document.querySelector(".replenishment-currency-block");
+  if (!RCurrencyBlock) return;
+
+  const RCurrencySelect = RCurrencyBlock.querySelector(
+    ".replenishment-currency-select"
+  );
+  const RCurrencyOptions = RCurrencyBlock.querySelectorAll(
+    ".r-currency-option"
+  );
+
+  const RInput = document.querySelector(
+    ".replenishment-input-wrapper label input"
+  );
+
+  const RAmountItems = document.querySelectorAll(".amount-money-item");
+
+  RCurrencySelect.addEventListener("click", (e) => {
+    e.stopPropagation();
+    RCurrencyBlock.classList.toggle("active");
+  });
+
+  RCurrencyOptions.forEach((ROption) => {
+    ROption.addEventListener("click", () => {
+      const RSelected = RCurrencyBlock.querySelector(
+        ".r-currency-selected-option"
+      );
+
+      if (RSelected) {
+        RSelected.textContent = ROption.textContent;
+      }
+
+      RCurrencyBlock.classList.remove("active");
+    });
+  });
+
+  document.addEventListener("click", (e) => {
+    if (!RCurrencyBlock.contains(e.target)) {
+      RCurrencyBlock.classList.remove("active");
+    }
+  });
+
+  if (RInput && RAmountItems.length) {
+    RAmountItems.forEach((RItem) => {
+      RItem.addEventListener("click", () => {
+        RInput.value = RItem.textContent.replace(/[^\d]/g, "");
+      });
+    });
+  }
+});
+
